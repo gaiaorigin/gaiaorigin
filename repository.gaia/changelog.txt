@@ -1,0 +1,49 @@
+
+[B]3.2.0 (2018.09.16)[/B]
+- Changed to a single repository.
+
+[B]3.0.0 (2018.07.22)[/B]
+- Major version upgrade.
+
+[B]2.1.0 (2018.04.08)[/B]
+- Added new fanart.
+
+[B]2.0.0 (2018.04.03)[/B]
+- Major version upgrade.
+
+[B]1.5.0 (2018.03.06)[/B]
+- Update for the new repository.
+
+[B]1.0.0 (2018.01.12)[/B]
+- Initial release.
+
+
+
+[B]BUBBLES[/B]
+
+[B]4.2.0 (2018.01.06)[/B]
+[B]Final Release[/B]
+[B]Long Live Gaia (https://gaiakodi.com)[/B]
+
+[B]2.5.0 (2017.12.17)[/B]
+- New version upgrade.
+
+[B]2.0.0 (2017.06.12)[/B]
+- Moved to the new servers.
+
+[B]1.4.0 (2017.05.12)[/B]
+- Fixed version numbering.
+
+[B]1.2.0 (2017.04.21)[/B]
+- Updated repository icon.
+- Removed TVAddons common repository.
+
+[B]1.1.0 (2017.03.26)[/B]
+- Added Quasar addon to the repistory.
+
+[B]1.0.1 (2017.03.05)[/B]
+- Respository change to OffshoreGit.
+- Changed back to the original version of URLresolver.
+
+[B]1.0.0 (2017.02.26)[/B]
+- Initial release.

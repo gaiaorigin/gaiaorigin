@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="plugin.video.gaia" version="3.2.1" name="Gaia" provider-name="Gaia">
+<addon id="plugin.video.gaia" version="3.2.2" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
-		<import addon="repository.gaia.1" version="3.0.0" />
-		<import addon="repository.gaia.2" version="3.0.0" />
-		<!-- <import addon="repository.gaia.3" version="3.0.0" /> -->
 		<import addon="script.gaia.resources" version="3.2.0" />
 		<import addon="script.gaia.artwork" version="3.0.0" />
 		<import addon="script.gaia.binaries" version="3.0.0" optional="true" />
 		<import addon="script.gaia.icons" version="3.2.0" optional="true" />
 		<import addon="script.gaia.skins" version="3.0.0" optional="true" />
-		<import addon="skin.gaia.aeon.nox" version="2.1.0" optional="true" />
+		<import addon="skin.gaia.aeon.nox" version="2.2.0" optional="true" />
+		<import addon="repository.gaia" version="3.2.0" optional="true" />
 
 		<import addon="script.module.orion" version="1.0.3" />
 		<import addon="script.module.resolveurl" version="5.0.06" />
@@ -59,28 +57,6 @@
 	</extension>
 </addon>
 
-<addon id="repository.gaia.2" version="3.0.0" name="Gaia Repository 2" provider-name="Gaia">
-	<extension point="xbmc.addon.repository" name="Gaia Repository Mirror 2">
-		<dir>
-			<info compressed="false">https://bitbucket.org/gaiaorigin/gaiaorigin/raw/HEAD/common/addons.xml?v=3.0.0</info>
-			<checksum>https://bitbucket.org/gaiaorigin/gaiaorigin/raw/HEAD/common/addons.xml.md5?v=3.0.0</checksum>
-			<datadir zip="true">https://bitbucket.org/gaiaorigin/gaiaorigin/raw/HEAD/common/</datadir>
-		</dir>
-		<info compressed="false">https://bitbucket.org/gaiaorigin/gaiaorigin/raw/HEAD/addons.xml?v=3.0.0</info>
-		<checksum>https://bitbucket.org/gaiaorigin/gaiaorigin/raw/HEAD/addons.xml.md5?v=3.0.0</checksum>
-		<datadir zip="true">https://bitbucket.org/gaiaorigin/gaiaorigin/raw/HEAD/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Gaia Secondary Repository</summary>
-		<description lang="en">The Gaia repository for the addon, resources, extensions, and external addons. Any of the Gaia mirror repositories can be used for installation and updates.</description>
-		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
-		<platform>all</platform>
-		<license>GPL 3.0</license>
-		<website>https://gaiakodi.com</website>
-		<forum>https://gaiakodi.com/?support</forum>
-	</extension>
-</addon>
-
 <addon id="script.gaia.artwork" version="3.0.0" name="Gaia Artwork" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -113,34 +89,19 @@
 	</extension>
 </addon>
 
-<addon id="repository.gaia.3" version="3.0.0" name="Gaia Repository 3" provider-name="Gaia">
-	<extension point="xbmc.addon.repository" name="Gaia Repository 3">
-		<!--
-
-		GitLab has blocked raw file access.
-		For now the GitLab repo has been disabled and it is also not a dependency of Gaia anymore.
-		However, the GitLab repo is still updated and can be manually accessed using a borwser
-
+<addon id="repository.gaia" version="3.2.0" name="Gaia Repository" provider-name="Gaia">
+	<extension point="xbmc.addon.repository" name="Gaia Repository">
 		<dir>
-			<info compressed="false">https://gitlab.com/gaiaorigin/gaiaorigin/raw/HEAD/common/addons.xml?v=3.0.0</info>
-			<checksum>https://gitlab.com/gaiaorigin/gaiaorigin/raw/HEAD/common/addons.xml.md5?v=3.0.0</checksum>
-			<datadir zip="true">https://gitlab.com/gaiaorigin/gaiaorigin/raw/HEAD/common/</datadir>
+			<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml?v=3.2.0</info>
+			<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml.md5?v=3.2.0</checksum>
+			<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/</datadir>
 		</dir>
-		<info compressed="false">https://gitlab.com/gaiaorigin/gaiaorigin/raw/HEAD/addons.xml?v=3.0.0</info>
-		<checksum>https://gitlab.com/gaiaorigin/gaiaorigin/raw/HEAD/addons.xml.md5?v=3.0.0</checksum>
-		<datadir zip="true">https://gitlab.com/gaiaorigin/gaiaorigin/raw/HEAD/</datadir>
-		-->
-		<dir>
-			<info compressed="false"></info>
-			<checksum></checksum>
-			<datadir zip="true"></datadir>
-		</dir>
-		<info compressed="false"></info>
-		<checksum></checksum>
-		<datadir zip="true"></datadir>
+		<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml?v=3.2.0</info>
+		<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml.md5?v=3.2.0</checksum>
+		<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Gaia Tertiary Repository</summary>
+		<summary lang="en">Gaia Primary Repository</summary>
 		<description lang="en">The Gaia repository for the addon, resources, extensions, and external addons. Any of the Gaia mirror repositories can be used for installation and updates.</description>
 		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
 		<platform>all</platform>
@@ -166,7 +127,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.gaia.aeon.nox" version="2.1.0" name="Gaia Aeon Nox" provider-name="Gaia">
+<addon id="skin.gaia.aeon.nox" version="2.2.0" name="Gaia Aeon Nox" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.grab.fanart" version="0.12.8"/>
@@ -176,10 +137,8 @@
 		<import addon="resource.images.recordlabels.white" version="0.0.1"/>
 		<import addon="script.skin.info.service" version="1.0.1"/>
 
-		<import addon="plugin.video.gaia" version="3.2.1" optional="true" />
-		<import addon="repository.gaia.1" version="3.0.0" optional="true" />
-		<import addon="repository.gaia.2" version="3.0.0" optional="true" />
-		<import addon="repository.gaia.3" version="3.0.0" optional="true" />
+		<import addon="plugin.video.gaia" version="3.2.2" optional="true" />
+		<import addon="repository.gaia" version="3.2.0" optional="true" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080" />
@@ -233,28 +192,6 @@
 	<extension point="xbmc.addon.metadata">
 		<summary>Gaia Resources</summary>
 		<description>The general resources for Gaia</description>
-		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
-		<platform>all</platform>
-		<license>GPL 3.0</license>
-		<website>https://gaiakodi.com</website>
-		<forum>https://gaiakodi.com/?support</forum>
-	</extension>
-</addon>
-
-<addon id="repository.gaia.1" version="3.0.0" name="Gaia Repository 1" provider-name="Gaia">
-	<extension point="xbmc.addon.repository" name="Gaia Repository 1">
-		<dir>
-			<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml?v=3.0.0</info>
-			<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml.md5?v=3.0.0</checksum>
-			<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/</datadir>
-		</dir>
-		<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml?v=3.0.0</info>
-		<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml.md5?v=3.0.0</checksum>
-		<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Gaia Primary Repository</summary>
-		<description lang="en">The Gaia repository for the addon, resources, extensions, and external addons. Any of the Gaia mirror repositories can be used for installation and updates.</description>
 		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
 		<platform>all</platform>
 		<license>GPL 3.0</license>

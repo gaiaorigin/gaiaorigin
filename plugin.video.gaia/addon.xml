@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gaia" version="3.2.1" name="Gaia" provider-name="Gaia">
+<addon id="plugin.video.gaia" version="3.2.2" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
-		<import addon="repository.gaia.1" version="3.0.0" />
-		<import addon="repository.gaia.2" version="3.0.0" />
-		<!-- <import addon="repository.gaia.3" version="3.0.0" /> -->
 		<import addon="script.gaia.resources" version="3.2.0" />
 		<import addon="script.gaia.artwork" version="3.0.0" />
 		<import addon="script.gaia.binaries" version="3.0.0" optional="true" />
 		<import addon="script.gaia.icons" version="3.2.0" optional="true" />
 		<import addon="script.gaia.skins" version="3.0.0" optional="true" />
-		<import addon="skin.gaia.aeon.nox" version="2.1.0" optional="true" />
+		<import addon="skin.gaia.aeon.nox" version="2.2.0" optional="true" />
+		<import addon="repository.gaia" version="3.2.0" optional="true" />
 
 		<import addon="script.module.orion" version="1.0.3" />
 		<import addon="script.module.resolveurl" version="5.0.06" />
