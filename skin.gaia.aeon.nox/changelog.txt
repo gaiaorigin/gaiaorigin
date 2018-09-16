@@ -1,4 +1,7 @@
 
+[B]2.2.0 (2018.09.16)[/B]
+- Changed repository addon.
+
 [B]2.1.0 (2018.04.08)[/B]
 - Added new fanart.
 
