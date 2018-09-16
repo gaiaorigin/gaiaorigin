@@ -1,0 +1,27 @@
+
+[B]1.1.0 (2018.09.09)[/B]
+- Integration support for external addons.
+- Added filter for unknown file sizes.
+- Fixed invalid authentication notification.
+- Possible fix for settings reset.
+- Added video quality to sequential scraping mode.
+- Many small fixes and additions.
+
+[B]1.0.3 (2018.08.11)[/B]
+- Authentication using email and password.
+- Fixed used and remaining limit labels.
+- Added support for anonymous accounts.
+- Added settings backup feature.
+- Added file hoster filter.
+- Fixed a few minor bugs.
+
+[B]1.0.2 (2018.08.05)[/B]
+- Better support for hoster links.
+- Added the hoster name to streams.
+
+[B]1.0.1 (2018.07.24)[/B]
+- Fixed the remaining days label.
+- Reduced the default limit for free accounts.
+
+[B]1.0.0 (2018.07.22)[/B]
+- Initial release.
