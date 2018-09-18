@@ -1,4 +1,7 @@
 
+[B]1.1.1 (2018.09.17)[/B]
+- Fixed encoding error that caused some scrapes to fail.
+
 [B]1.1.0 (2018.09.09)[/B]
 - Integration support for external addons.
 - Added filter for unknown file sizes.
