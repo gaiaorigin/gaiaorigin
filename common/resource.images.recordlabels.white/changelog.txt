@@ -1,0 +1,20 @@
+v0.0.7
+- Fix potential texture issues
+
+v0.0.6
+- Add info file
+
+v0.0.5
+- Add compile flag for packaging
+
+v0.0.4
+- Fix icon.png
+
+v0.0.3
+- Compress into XBT file
+
+v0.0.2
+- Removed duplicate files
+
+v0.0.1
+- Initial release

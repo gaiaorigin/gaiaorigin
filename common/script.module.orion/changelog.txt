@@ -1,4 +1,10 @@
 
+[B]1.2.0 (2018.09.19)[/B]
+- Fixed Incursion integration.
+- Fixed Placenta integration.
+- Added Covenant integration.
+- Added Yoda integration.
+
 [B]1.1.1 (2018.09.17)[/B]
 - Fixed encoding error that caused some scrapes to fail.
 
