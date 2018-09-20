@@ -1,4 +1,7 @@
 
+[B]3.2.3 (2018.09.20)[/B]
+- Fixed slow Orion loading times.
+
 [B]3.2.2 (2018.09.16)[/B]
 - Changed repository addon.
 
