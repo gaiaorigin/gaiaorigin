@@ -1,4 +1,7 @@
 
+[B]1.2.1 (2018.09.24)[/B]
+- Fixed audio channel filter.
+
 [B]1.2.0 (2018.09.19)[/B]
 - Fixed Incursion integration.
 - Fixed Placenta integration.
