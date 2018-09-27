@@ -1,4 +1,10 @@
 
+[B]3.2.4 (2018.09.27)[/B]
+- Fixed exact episode searches.
+- Fixed apostrophe bug in metadata.
+- Fixed NzbFinder provider.
+- Fixed NzbGeek provider.
+
 [B]3.2.3 (2018.09.20)[/B]
 - Fixed slow Orion loading times.
 
