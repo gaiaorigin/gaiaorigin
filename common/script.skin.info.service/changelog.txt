@@ -1,0 +1,5 @@
+v1.0.1
+Krypton compatibility (change deprecated window names)
+
+v1.0.0
+Initial Release.

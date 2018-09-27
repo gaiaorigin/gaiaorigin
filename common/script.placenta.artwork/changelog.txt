@@ -1,0 +1,5 @@
+[B]1.0.7[/B]
+- Compressed  all icons to load a little better (with minimal to no quality loss)
+
+[B]1.0.0[/B]
+- Initial version

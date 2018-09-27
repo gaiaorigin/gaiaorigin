@@ -1,0 +1,906 @@
+v0.5.51
+resolveurl no longer optional
+v0.5.50
+
+switched out urlresolver for resolveurl
+
+Added
+- Movie25org
+- Hugemoviesdb
+- kakitube
+- couchturner
+
+Fixed
+- mvlinks
+- mydownloadtube 
+- releasebb
+- file pursuit 
+- watch32hd
+- PutlockerHD 
+- watchmoviesforever 
+- iextv 
+- zoocinema 
+- openloadmovie
+- freemusic
+- cartoonhd
+- wmz
+- filmaipk
+- fanmovieshow
+- ten80
+- openloadmovie
+- movietv
+- moviewatcher
+- watchstream
+- hollymovie
+
+Removed 
+- Sceper
+- Uwatchfree 
+- hdmoviewatch9
+- youmovies
+- flenix
+- playdk
+- hddizi
+- dudmovies
+- cinemamkv
+- solarmovie
+- oneonline
+- ddl valley
+- filmxy
+- mydownloadtube
+- imdark
+- Iwannawatch
+- Hasthd
+
+v0.5.49
+
+Added
+- dudmovies 
+- filmfrantic 
+- Coolmoviezone 
+- One23Movies
+- SolarMovies
+- Playdk 
+- new proxy.py 
+
+Fixed 
+- openloadmovies 
+- thewatchseries
+- watchepisodes 
+- carthd
+- mvlinks
+- ImDark
+- Watchcartoon
+- movies321
+- zoocinema
+- Watchstream
+- ddlvalley 
+- file Pursuit 
+- Cinemamkv 
+- allmovies4
+- bnw
+
+
+
+V0.5.48
+
+Added
+- hdmovieswatch9
+- iwannawatch (blocked UK)
+- azmovies
+- youmovies
+- openloadmovies
+- myvideolinks
+- allmovies4
+
+Fixed
+- extramovies (TV)
+- mydownloadtube (TV)
+- primewire
+- zoocinema
+- bnw
+- iextv
+- movie4u
+- filepursuit
+- ten80p
+- hollymoviehd
+- BobMovies
+- uwatchfree
+- watchfrees
+- thewatchseries 
+- hddizi 
+- oneonline (movies)  
+- movies321
+
+Removed
+- tvmovieflix
+- watchmoviesforever
+- watchmoviesonline
+- series9
+- Fullmovies24
+- 1movies
+- Fanmoviesshow
+- Cinemamkv
+- iextv
+- joymovies
+- Hevc Bluray
+- shockshare
+- watchstream
+- onemovie
+- serieswatch 
+- beemp3
+- mp3clan
+- filmxy 
+
+
+v0.5.47
+
+- Fixed
+- iextv
+- animetoon
+- hddizi
+- watchcartoons
+- oneonline
+
+Added
+- Fanmoviesshow
+- watchmoviesforever
+- seriescravings
+- movie4k
+- MovieTV
+- fullmovies24
+- full4movies
+
+Fixed 
+- bnw
+- iextv 
+- tvmovflix 
+- series9
+
+Removed 
+- cyberreel 
+- moviesco 
+- rlshd
+
+Added 
+- timer to working scrapers
+- import for urlresolver to addon.xml
+
+- wmz
+
+- file pursuit 
+
+- movieseriestv
+
+- My watchseries 
+
+- series9
+
+- ddl valley (tv shows)
+
+- primeio
+
+- freemusic
+
+- TubiTv
+
+
+Fixed 
+- sockshare
+
+- carthd
+
+- iextv
+
+- thewatchseries 
+
+- sceper 
+
+- proxy
+
+- Extramovies (tv shows) 
+
+- mp3clan
+
+- filmxy 
+
+- Primewire
+ 
+
+Removed 
+- Vumoo
+
+- dudmovies
+
+- movieflix
+
+- moviesco
+
+- pandamovie
+
+- moviesfile
+
+- all index scrapers 
+
+- series-cravings
+
+- uktv play
+
+v0.5.46
+
+
+Added
+- Putlockerhd
+
+- cyberreel 
+
+- onlinestream
+
+- darewatch
+
+- moviesfile
+
+- tvmovieflix
+
+- unblocked url for watchfree 
+
+
+Fixed 
+- hollymovie
+
+- Twoddl
+
+- hubmovie 
+
+- watchepisodes
+
+- filmxy
+
+- Cinemamk
+
+- filmxy
+
+- hevc
+
+
+Removed 
+- cartoonson
+
+- watchepisodeseries
+
+- full4movies 
+
+- iextv
+
+- onlinehd
+
+- zoocinema
+
+- sockshare
+
+v0.5.45
+
+
+Added 
+- sockshare
+
+- ionlinemovies
+
+- full4movies
+
+
+Fixed 
+- 321moviescc
+
+- mydownloadtube 
+
+- Oceanof 
+
+- Vumoo 
+
+- zoocinema
+
+- Watchstreams
+
+- Hdpopcorn 
+
+
+Removed 
+- streamthis
+
+- onlinehdmovies 
+
+- streamhd
+
+v0.5.44
+
+
+Added 
+- OnlineHDMovies
+
+
+Fixed 
+- Serieswatch 
+
+- ten80p
+
+- series cravings
+
+- Filmaipk
+
+
+Removed 
+- gmovies
+
+v0.5.43
+
+ 
+Fixed 
+- hubmovie
+
+- Flenix
+
+v0.5.42
+
+ 
+Added 
+- hdpopcorn
+
+- BobMovies
+
+- WMO
+
+- moviesco
+
+- oceanof
+
+- dudmovies
+
+- seriescravings
+
+- tv scrape to mydownloadtube
+
+- more proxies
+
+- extramovies
+
+- filmxy
+
+- zoocinema
+
+- Twoddl
+
+- iextv
+
+- hevc
+
+- onlinehd
+
+- uwatchfree
+
+- watch32
+
+- Hubmovie
+
+- Vex
+
+- BnwMovies
+
+
+Fixed 
+- TV Release
+
+- freedownload
+
+- hddizi
+
+- thewatchseries
+
+- CartoonHd 
+
+- ten80p
+
+- HollyMovieHD 
+- Wrzcraft
+
+- beemp3
+
+- mp3clan
+
+- ReleaseBB
+
+- Watchcartoon
+
+
+Removed 
+- mfree
+
+- onemusic
+
+- Loado
+
+- Filmpro
+
+- E24Docs
+
+- dizi720
+
+- watchstreams
+
+- Onyx
+
+- Fullmovies24
+
+- moviefullhd
+
+- ProjectFree
+
+v0.5.41
+
+
+Added 
+- Cartoonson
+
+- HollyMovieHD
+
+- watchstream
+
+- filmapik
+
+- moviefullhd
+
+- E24Docs
+
+- hasthd
+
+- cooltv
+
+- indexer
+
+ 
+Fixed 
+- mydownloadtube
+
+- Flenix
+
+- movies4u
+
+- movieflix
+
+- Streamhd
+
+- Vumoo
+
+- mfree
+
+- projectfree
+
+- thewatchseries
+
+- Yesmovies
+
+- CartoonHd
+
+- movies321
+
+- joymovies 
+
+Removed 
+- ten80p
+
+- Ultramovie
+
+- movies123
+
+- Bmoviez
+
+- movieflix
+
+- pelispedia
+
+
+Added 
+- icon
+ and  fanart 
+
+v0.5.40
+
+- addon.xml updated to fix verison issue with last update. 
+
+v0.5.37
+
+- Monster
+
+- enet24doc
+
+- onyx
+
+- dlvaio
+
+- movieserieshd
+
+- loado
+
+- ten80
+
+- dlfile
+
+- dlfpro
+
+- filmpro
+
+ 
+Fixed 
+- movies4u
+
+- rlshd
+
+
+Removed 
+- YTS Movies
+
+- Dudmovies
+
+- 1onethousand
+
+- Streamhd
+
+
+v0.5.36
+
+ 
+Added 
+- moviewatcher
+
+- freedownload
+
+- UKTVPlay
+
+- dl3
+
+- fixed Dizi720
+
+ 
+Fixed
+- thewatchseries
+
+- fullmovies24
+
+- UltraMovie
+
+- hddizi
+
+v0.5.35
+ 
+
+Added 
+- oneonline
+
+- serieswatch
+
+- streamthis
+
+ 
+Fixed 
+- Yesmovies
+ 
+- some proxies fixed (thanks Dandy)
+
+v0.5.34
+
+
+Removed
+- streamhd
+
+- watchepisodes
+
+ 
+Fixed 
+-Yesmovies
+
+- Watchcartoon
+
+ 
+Added 
+- iamdark
+
+v0.5.33
+
+ 
+Removed 
+- 4kmovies
+
+- streamdream
+
+v0.5.32
+
+ 
+Added 
+- dudmovies
+
+- movies4u
+
+ 
+Removed 
+- 4kmovies
+
+ 
+Fixed 
+- 1onethousand
+
+- CartoonHd
+
+v0.5.31
+ 
+Added 
+- 4kmovies
+
+- mydownloadtube
+
+ 
+Fixed 
+- 1movies
+
+- dizi720
+
+- Flienx
+v0.5.30
+
+- some broken scrapers
+
+
+Added 
+- thewatchseries
+
+- project free tv
+
+ 
+Removed 
+- 123 hulu
+
+- Moviegrabber
+
+- Kingmovies
+
+- quickmovies
+
+v0.5.29
+
+
+Added 
+- 2 more scrapers
+
+v0.5.28
+
+ 
+Fixed 
+- m4u
+
+- moviegrabber
+
+- KingMovies
+
+
+Added 
+- 8 new scrapers
+
+- 2 new Debrid scrapers
+
+- 2 new music scrapers
+
+ 
+Fixed
+- older kodi versions on android (no set compression on 2.6)
+v0.5.26
+
+
+Added
+
+- added a few RD scrapers (converted from elysium)
+
+Fixed
+- a few scrapers
+
+- respects timeout parameter now (throws error on timeout for non dialog methods)
+
+
+v0.5.25
+
+
+Added 
+- yesmovies
+
+- gostream
+
+ 
+Fixed
+- m4u
+
+v0.5.24
+
+ 
+Added
+- QuickMovies
+
+- KingMovies
+
+- MovieGrabber
+
+- Watchfrees
+
+
+Fixed 
+- dizi720
+
+- solar
+
+v0.5.21
+ 
+- corrected addon.xml
+
+v0.5.20
+ 
+- m4ufree
+
+- pubfilm
+
+v0.5.19
+
+
+Removed 
+- misplaced file
+
+
+v0.5.18
+
+ 
+Fixed
+- m4ufree (thanks ARB)
+
+- hostedlink
+
+
+v0.5.17
+
+- m4ufree
+
+
+v0.5.16
+- 
+
+Removed
+- solar
+
+
+Added
+- cinemabox 
+
+Fixed 
+- link bug in animetoon
+
+v0.5.15
+
+- most existing scrapers
+
+- improved some scrapers
+
+
+v0.5.12
+
+
+New optional parameter: 
+- enable_debrid
+
+- added debrid capabilities to alluc scraper
+
+- add calling addons icon to with_dialog functions
+ 
+- #bugfixes
+
+
+v0.5.11
+
+
+Removed
+
+- removed 123moviescraper at md's request
+
+
+Fixed
+- some scrapers
+
+
+Added
+
+- bobby
+- alluc 
+- solar scrapers (thanks shism)
+
+- new optional check_url parameter to scrape_movie_with_dialog and scrape_episode_with_dialog to weed out some of the dead links
+
+v0.5.10
+
+
+Fixed
+- 123movie scraper (thx to md's code for inspiration)
+
+
+v0.5.9
+
+
+Removed
+- cyberreel 
+- watchseries 
+- yabanci
+
+Add
+
+- baseurl settings for some scrapers
+
+
+Removed
+
+- genvideo
+
+Added
+
+- expanded the search capabilities of some scrapers
+
+v0.5.8
+
+Removed
+
+- watch5s
+
+Stuff
+
+- fixed scrapers
+
+- added cloudflare module
+
+- added more scrapers (thanks origin)
+
+- fixed other small bugs
+
+
+
+v0.5.6
+- 
+added sort function to with_dialog functions
+- 
+updated proxy-site list
+
+
+v0.5.5
+- 
+updated cartoon scrapers
+
+- added ability to exlude scrapers
+
+v0.5.4
+- 
+added scrapers (thanks origin for some of them)
+added with dialog functions
+- 
+changed episode scrape function signature
+
+v0.5.3
+
+- fixed error in title handling
+
+
+v0.5.2
+- 
+fixed scrapers
+added onemusic
+
+
+v0.5.1
+- 
+added watchfree scraper
+- 
+small change to primewire scraper
+
+
+v0.5.0
+beta release, here be dragons

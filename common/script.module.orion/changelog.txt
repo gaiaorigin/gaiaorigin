@@ -1,4 +1,8 @@
 
+[B]1.2.2 (2018.09.26)[/B]
+- Improved scraping time.
+- Fixed dynamic filter saving.
+
 [B]1.2.1 (2018.09.24)[/B]
 - Fixed audio channel filter.
 

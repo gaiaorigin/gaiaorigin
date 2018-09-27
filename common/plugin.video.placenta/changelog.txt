@@ -1,0 +1,11 @@
+ver 1.2.3
+	- A Few tweaks
+	- Fixed existing providers
+ver 1.2.2
+	- A Few tweaks
+	- Scraper updates
+v1.2.1
+    - Updated Settings
+    - Replaced Alluc	
+v1.2.0
+    - Builder Edition updates

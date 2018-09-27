@@ -2,7 +2,7 @@
 <addons>
 
 <!-- URLRESOLVER -->
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.09" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.23" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -20,12 +20,12 @@
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
 		<forum>https://www.tvaddons.co/forums</forum>
-		<website>https://www.tvaddons.co</website>
+        <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 
 <!-- RESOLVEURL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.09" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.16" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -46,7 +46,7 @@
 </addon>
 
 <!-- METAHANDLER -->
-<addon id="script.module.metahandler" name="metahandler" version="3.0.2" provider-name="Eldorado, jsergio">
+<addon id="script.module.metahandler" name="metahandler" version="3.0.3" provider-name="Eldorado, jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -68,8 +68,1841 @@
 	</extension>
 </addon>
 
+<!-- NANSCRAPERS -->
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.51" provider-name="Team NaN">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.futures" version="2.2.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.six"/>
+		<import addon="script.module.resolveurl" version="5.0.00"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+		</description>
+		<license>GPL v3</license>
+		<source>https://github.com/noobsandnerds/noobsandnerds/tree/master/script.module.nanscrapers</source>
+		<forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
+		<website>http://noobsandnerds.com</website>
+	</extension>
+</addon>
+
+<!-- ELEMENTUM -->
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		 <summary lang="es">Elementum: Transmisión de medios</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<description lang="es">Elementum es un motor de búsqueda y transmisión de torrents. No navega por sitios web de torrents por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/screenshots/home.png</screenshot>
+			<screenshot>resources/screenshots/movies.png</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.android_arm" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.android_arm64" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.android_x86" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.darwin_x64" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.darwin_x86" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.ios_arm64" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.ios_arm7" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.linux_arm64" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.linux_arm6" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.linux_arm7" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.linux_x64" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.linux_x86" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.windows_x64" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.61.windows_x86" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<!-- ELEMENTUM REPOSITORY -->
+<addon id="repository.elementum" name="Elementum Repository" version="0.0.43" provider-name="elgatito">
+	<requires></requires>
+	<extension point="xbmc.addon.repository" name="Elementum Repository">
+		<info compressed="false">http://localhost:65220/repository/elgatito/plugin.video.elementum/addons.xml</info>
+		<checksum>http://localhost:65220/repository/elgatito/plugin.video.elementum/addons.xml.md5</checksum>
+		<datadir zip="true">http://localhost:65220/repository/elgatito/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">GitHub repository for Elementum updates</summary>
+	</extension>
+</addon>
+
+<!-- ELEMENTUM BURST -->
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.16" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="plugin.video.elementum" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.script" library="burst.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum torrents provider</summary>
+		<summary lang="hr">Elementum torrent pružatelji usluga</summary>
+		<description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
+		<description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+	<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
+		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+		<website>https://elementum.surge.sh</website>
+		<source>https://github.com/elgatito/script.elementum.burst</source>
+		<forum>TODO</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<!-- ELEMENTUM CONTEXT HELPER -->
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.1" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.python" version="2.23.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="plugin.video.elementum" optional="true"/>
+	</requires>
+	<extension point="kodi.context.item">
+	  <menu id="kodi.core.main">
+		  <label>My submenu</label>
+		  <item library="context_play.py">
+			<label>32000</label>
+			<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)</visible>
+		  </item>
+	</menu>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<summary lang="en">Elementum Context Menu</summary>
+		<description lang="en">Context Menu for Elementum.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
+		</disclaimer>
+		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+		<website>https://elementum.surge.sh</website>
+		<source>https://github.com/elgatito/context.elementum</source>
+		<forum></forum>
+	</extension>
+</addon>
+
+<!-- QUASAR -->
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.android_arm" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.android_x64" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.android_x86" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.darwin_x64" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.linux_arm" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.linux_arm64" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.linux_arm7" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.linux_x64" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.linux_x86" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.windows_x64" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78.windows_x86" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.quasar" optional="true" />
+		<import addon="script.quasar.burst" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar: Torrent streaming</summary>
+		<description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>all</platform>
+		<website>https://github.com/scakemyer/plugin.video.quasar</website>
+		<source>https://github.com/scakemyer/plugin.video.quasar</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+		<license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/home.jpg</screenshot>
+			<screenshot>resources/screenshots/movies.jpg</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<!-- QUASAR REPOSITORY -->
+<addon id="repository.quasar" name="Quasar Repository" version="0.9.78" provider-name="scakemyer">
+	<requires></requires>
+	<extension point="xbmc.addon.repository" name="Quasar Repository">
+		<info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info>
+		<checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum>
+		<datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">GitHub repository for Quasar updates</summary>
+	</extension>
+</addon>
+
+<!-- QUASAR BURST -->
+<addon id="script.quasar.burst" name="Quasar [COLOR FFFF6B00]Burst[/COLOR]" version="0.5.10" provider-name="scakemyer">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="plugin.video.quasar" optional="false"/>
+	</requires>
+	<extension point="xbmc.python.script" library="burst.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quasar torrents provider</summary>
+		<description lang="en">Quasar Burst is a lean and mean multi-provider for Quasar.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
+		</disclaimer>
+		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+		<website>https://burst.surge.sh</website>
+		<source>https://bitbucket.org/scakemyer/script.quasar.burst</source>
+		<forum>TODO</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<!-- GRAB FANART -->
+<addon id="script.grab.fanart" name="Grab Fanart" version="0.14.1" provider-name="robweber">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exposes fanart as skin properties for slideshows, etc</summary>
+		<description lang="en">Uses the Kodi database to grab all fanart from media items and put it into a skin property for use by skins/slideshows as previous version of XBMC allowed.</description>
+		<forum>http://forum.kodi.tv/showthread.php?tid=166572</forum>
+		<source>https://github.com/robweber/script.grab.fanart</source>
+	<website>https://github.com/robweber/script.grab.fanart</website>
+		<license>The MIT License</license>
+		<platform>all</platform>
+		<language></language>
+	</extension>
+</addon>
+
+<!-- SKIN SHORTCUTS -->
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.18" provider-name="BigNoid,marcelveldt">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.unidecode" version="0.4.14"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<news>Template improvements and bug fixes</news>
+		<description lang="bg">Добавка за облици, която осигурява просто управление и списък с потребителски преки пътища (изисква поддръжка от облика)</description>
+		<description lang="de">Add-on für Skins für einfache Bearbeitung und Auflistung von benutzerdefinierten Verknüpfungen (erfordert Skin-Unterstützung)</description>
+		<description lang="el">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description>
+		<description lang="en">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="es">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description>
+		<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l'habillage)</description>
+		<description lang="gl">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description>
+		<description lang="hr">Dodatak za presvlake koja omogućava jednostavno upravljanje i prikaz korisnikovih prečaca (zahtijeva podršku presvlake) </description>
+		<description lang="hu">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description>
+		<description lang="is">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description>
+		<description lang="it">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description>
+		<description lang="lt">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo  sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description>
+		<description lang="nl">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description>
+		<description lang="no">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description>
+		<description lang="pl">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description>
+		<description lang="pt">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description>
+		<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description>
+		<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description>
+		<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
+		<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU General Public License, v2</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/BigNoid/script.skinshortcuts</source>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+	</extension>
+</addon>
+
+<!-- LIBRARY DATA PROVIDER -->
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid" version="0.3.2">
+	<requires>
+		<import addon="xbmc.json" version="7.9.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.routing" version="0.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Browse movies and episodes in a variety of sorted playlists.</summary>
+		<description lang="en">Plugin for skins to provide library data throughout the skin. It can also be used as standalone plugin to browse the playlists in the video library.</description>
+		<disclaimer lang="en" />
+		<platform>all</platform>
+		<language />
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
+		<website>https://github.com/BigNoid/service.library.data.provider</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/service.library.data.provider</source>
+		<news>Added Polish and Hebrew translations, thx Etharr and Eng2Heb</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<!-- STUDIO ICONS WHITE -->
+<addon id="resource.images.studios.white" name="Studio Icons - White" version="0.0.12" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="studios" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Studio Icons</summary>
+		<description lang="en">White Studio Icons</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+	</extension>
+</addon>
+
+<!-- RECORDLABEL ICONS WHITE -->
+<addon id="resource.images.recordlabels.white" name="Recordlabel Icons - White" version="0.0.7" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="recordlabels" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Recordlabel Icons</summary>
+		<description lang="en">White Recordlabel Icons</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+	</extension>
+</addon>
+
+<!-- SKIN INFO SERVICE -->
+<addon id="script.skin.info.service" name="Skin Info Service" version="1.0.1" provider-name="phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Script used by skins to show extended media info.</summary>
+		<description lang="en">This script fetches extended information for several media types (artists, albums, movie sets etc.). Needs skin support.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>-</forum>
+		<source>-</source>
+		<email>-</email>
+		<news>[B]***Recent Changes***[/B][CR]Krypton compatibility (change deprecated window names)</news>
+	</extension>
+</addon>
+
+<!-- SIMPLE JSON -->
+<addon id="script.module.simplejson" name="simplejson" version="3.4.0" provider-name="Bob Ippolito">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module"
+						 library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">Simple, fast, extensible JSON encoder/decoder for Python</summary>
+		<description lang="en">Simple, fast, extensible JSON encoder/decoder for Python</description>
+		<disclaimer lang="en">Code taken from https://pypi.python.org/pypi/simplejson/</disclaimer>
+		<license>MIT License, Academic Free License v. 2.1</license>
+		<website>https://pypi.python.org/pypi/simplejson/</website>
+		<source>https://pypi.python.org/pypi/simplejson/</source>
+	</extension>
+</addon>
+
+<!-- PLUGIN ROUTING -->
+<addon id="script.module.routing" name="Plugin routing" version="0.2.0" provider-name="takoi">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Routing module for plugins</summary>
+		<description lang="en">Provides plugin URL routing and pattern matching</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<platform>all</platform>
+		<source>https://github.com/tamland/kodi-plugin-routing</source>
+	</extension>
+</addon>
+
+<!-- ADDON COMMON -->
+<addon id="script.module.addon.common" name="Common addon methods" version="2.0.1" provider-name="Eldorado (original: t0mm0)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Collection of commonly used addon routines</summary>
+		<description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+		<disclaimer lang="en"></disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+	</extension>
+</addon>
+
+<!-- MYCONNPY -->
+<addon id="script.module.myconnpy" name="MySQL Connector/Python" version="1.1.7" provider-name="MySQL">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">MySQL Connector/Python</summary>
+		<description lang="en">MySQL Connector/Python is implementing the MySQL Client/Server protocol completely in Python. This means you don't have to compile anything or MySQL (client library) doesn't even have to be installed on the machine.</description>
+		<license>GPLv2</license>
+		<platform>all</platform>
+		<website>http://dev.mysql.com/doc/connector-python/en/index.html</website>
+		<source>http://dev.mysql.com/downloads/connector/python/</source>
+	</extension>
+</addon>
+
+<!-- UNIDECODE -->
+<addon id="script.module.unidecode" name="unidecode" version="0.4.16" provider-name="Tomaz Solc (Tomaz.solc@tablix.org)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</summary>
+		<description lang="en">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</description>
+		<disclaimer lang="en">Code taken from https://pypi.python.org/pypi/Unidecode</disclaimer>
+		<license>GNU General Public License v.2</license>
+		<website>https://pypi.python.org/pypi/Unidecode</website>
+		<source>https://pypi.python.org/pypi/Unidecode</source>
+	</extension>
+</addon>
+
+<!-- TRAKT MODULE -->
+<addon id="script.module.trakt" name="trakt.py" version="2.14.1" provider-name="Fuzeman, Razzeee">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="2.12.4"/>
+	<import addon="script.module.six" version="1.9.0"/>
+	<import addon="script.module.arrow" version="0.6.0"/>
+	</requires>
+	<extension point="xbmc.python.module"
+						 library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Python interface for the trakt.tv API</summary>
+		<description>Packed for Kodi from https://github.com/fuzeman/trakt.py</description>
+		<platform>all</platform>
+		<language></language>
+		<license>MIT</license>
+		<forum></forum>
+		<website>https://github.com/fuzeman/trakt.py</website>
+		<source>https://github.com/Razzeee/script.module.trakt</source>
+		<email></email>
+	</extension>
+</addon>
+
+<!-- TRAKT MODULE -->
+<addon id="script.trakt" name="Trakt" version="3.2.0" provider-name="Trakt.tv, Razzeee">
+	<requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.trakt" version="2.12.0"/>
+        <import addon="script.module.dateutil" version="2.4.2"/>
+        <import addon="script.module.addon.signals" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="defaultscript.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" name="trakt.service" library="default.py" start="login" />
+	<extension point="xbmc.addon.metadata" name="trakt.metadata">
+		<summary lang="da_DK">TV og film program for Trakt.tv</summary>
+		<summary lang="de_DE">TV und Film Scrobbler für Trakt.tv</summary>
+		<summary lang="el_GR">Υπηρεσία κοινοποίησης ταινιών και τηλ. σειρών (scrobbler) στο Trakt.tv</summary>
+		<summary lang="en_GB">TV and movie scrobbler for Trakt.tv</summary>
+		<summary lang="en_NZ">TV and movie scrobbler for Trakt.tv</summary>
+		<summary lang="en_US">TV and movie scrobbler for Trakt.tv</summary>
+		<summary lang="es_ES">Scrobbler de Películas y Series para Trakt.tv</summary>
+		<summary lang="fi_FI">TV-sarjojen ja elokuvien scrobbler Trakt.tv:lle</summary>
+		<summary lang="fr_FR">Scrobbler TV et film pour Trakt.tv</summary>
+		<summary lang="fr_CA">Scobbler télé et films pour Trakt.tv</summary>
+		<summary lang="he_IL">Scrobbler סדרות וסרטים עבור Trakt.tv</summary>
+		<summary lang="hu_HU">TV és film beküldő a Trakt.tv-re</summary>
+		<summary lang="it_IT">Scrobbler di serie TV e film per Trakt.tv</summary>
+		<summary lang="ko_KR">Trakt.tv에 TV와 영화 시청 상태를 전송합니다</summary>
+		<summary lang="lt_LT">TV ir filmų registratorius, skirtas Trakt.tv</summary>
+		<summary lang="nl_NL">TV- en films-scrobbler voor Trakt.tv</summary>
+		<summary lang="nb_NO">TV og film-scrobbler for Trakt.tv</summary>
+		<summary lang="pl_PL">Dodatek umożliwiający rejestrację odtwarzanych i obejrzanych seriali i filmów w serwisie Trakt.tv</summary>
+		<summary lang="pt_PT">Scrobbler de episódios e filmes para o Trakt.tv</summary>
+		<summary lang="pt_BR">Scrobbler de episódios e filmes para o Trakt.tv</summary>
+		<summary lang="sk_SK">Seri</summary>
+		<summary lang="sv_SE">TV och film skrobblare för Trakt.tv</summary>
+		<description lang="da_DK">Scrobble automatisk alle tv-episoder og film du ser til Trakt.tv! Du får en omfattende historik af alt, hvad du har set og du vil være en del af et globalt fællesskab af serie og film-entusiaster. Tilmeld dig gratis på http://trakt.tv og få et væld af funktioner: &#10;&#10;&#10;- Scrobble automatiskalt  hvad du ser&#10;&#10;- Mobile apps til iPhone, iPad, Android og Windows Phone&#10;&#10;- Del det, du ser (i realtid), samt send vurderinger til facebook og&#10;twitter&#10;&#10;- Personlig kalender, så du aldrig går glip af en serie/film&#10;&#10;- Følg med i hvad dine venner og bekendte ser&#10;&#10;- Brug huskelister så du ikke glemmer, hvad de skal se&#10;&#10;- Vis og imponér din samling til venner&#10;&#10;- Opret brugerdefinerede lister &#10;&#10;- Nemt holde øje med dit serie fremskridt i løbet af sæsoner og afsnit&#10;&#10;- Sammenlign din samling mod lister som IMDb Top 250&#10;&#10;- Opdag nye serier og film baseret på TV-vaner&#10;&#10;- Widgets til dit forumsignalturer&#10;&#10;&#10;Hvad kan denne tilføjelse gøre? &#10;&#10;&#10;- Scrobble automatisk alle tv-afsnit og film, du ser&#10;&#10;- Synkroniser dine tv-afsnit og film samlinger til Trakt (efter et bibliotek opdatering) &#10;&#10;- Automatisk oprydning af din Trakt-samling, så den passer sammen med Kodi&#10;&#10;- Hold set-statusser synkroniseret mellem Kodi og Trakt&#10;&#10;- Vurder film og afsnit umiddelbart efter at de er set&#10;&#10;&#10;Særlig tak til alle der har bidraget til denne tilføjelser! Se historikken og  og changelog for at se hvem disse talentfulde udviklere er.</description>
+		<description lang="de_DE">Scrobble automatisch alle Serien und Filme die du schaust zu Trakt.tv! Behalte den Überblick über deine Sammlung und sei Teil einer globalen Gemeinschaft von Serien- und Filmliebhabern. Registriere jetzt deinen kostenlosen Account unter http://trakt.tv und bekomme einen Haufen Funktionen:&#10;&#10;- Automatisches scrobbeln von dem was du guckst&#10;- Mobile Apps für iPhone, iPad, Android und Windows Phone&#10;- Teile was du schaust (in Echtzeit) und bewerte auf Facebook und Twitter&#10;- Personalisierte Kalender: So verpasst du nie wieder eine Serie&#10;- Folge deinen Freunden und Leuten, für die du dich interessierst&#10;- Mach dir Beobachtungsliste zu nutze, um nicht zu vergessen was du ansehen wolltest&#10;- Tracke deine Mediensammlung, um deine Freunde zu beeindrucken&#10;- Erstelle benutzerdefinierte Listen zu jedem Thema das dir einfällt&#10;- Behalte die Übersicht über deinen Fortschritt bei Serien&#10;- Überblicke deinen Fortschritt bei offiziellen Listen wie zum Beispiel den IMDb Top 250&#10;- Entdecke neue Serien und Filme anhand deines Geschmacks&#10;- Widgets für deine Forum Signatur&#10;&#10;Was kann dieses Addon?&#10;&#10;- Automatisches scrobbeln aller Serien und Filme die du anschaust&#10;- Synchronisiere deine gesammelten Serien und Filme zur Trakt Sammlung (direkt nach dem Bibliotheksupdate)&#10;- Automatisches aufräumen deiner Trakt Sammlung damit sie mit Kodi übereinstimmt&#10;- Halte "gesehen" Markierungen synchronisiert zwischen Kodi und Trakt&#10;- Bewerte Episoden und Filme direkt nach dem du sie geguckt hast&#10;&#10;Besonderer Dank gilt allen die an diesem Plugin mit gearbeitet haben! Schau in die Commit Historie und das Änderungsprotokoll, um diese talentierten Entwickler zu sehen.</description>
+		<description lang="el_GR">Αυτόματη κοινοποίηση στο Trakt.tv όλων των επεισοδίων και ταινιών που παρακολουθείτε! Μπορείτε να διατηρείτε αναλυτικό ιστορικό από ο,τιδήποτε είδατε, και να γίνετε μέρος μιας παγκόσμιας κοινότητας σινεφίλ και φαν της τηλεόρασης. Εγγραφείτε δωρεάν στο http://trakt.tv για ένα πλήθος παροχών:&#10;&#10;- Αυτόματη κοινοποίηση όσων παρακολουθείτε&#10;- Εφαρμογές για κινητά iPhone, Android, Windows Phone και iPad&#10;- Μοιραστείτε ό,τι παρακολουθείτε (σε πραγματικό χρόνο), μαζί με τη βαθμολογία σας, στο facebook και το twitter&#10;- Προσωπικό ημερολόγιο, για να μη χάνετε ποτέ επεισόδιο&#10;- Ακολουθήστε τους φίλους σας, και άτομα για τα οποία ενδιαφέρεστε&#10;- Χρήση λιστών προβολής, για να μην ξεχνάτε τι θέλετε να δείτε&#10;- Εντυπωσιάστε τους φίλους σας με τις συλλογές σας&#10;- Δημιουργήστε προσωπικές λίστες με ό,τι θέμα επιθυμείτε&#10;- Δείτε την πρόοδό σας όσον αφορά τις τηλεοπτικές σειρές, με πολύ εύκολο τρόπο&#10;- Συγκρίνετε την πρόοδό σας με επίσημες λίστες, όπως των 250 Κορυφαίων του IMDb&#10;- Ανακαλύψτε νέες σειρές και ταινίες με βάση όσα έχετε ήδη παρακολουθήσει&#10;- Widget για την υπογραφή σας σε διάφορα forum&#10;&#10;Τι μπορεί να κάνει αυτό το πρόσθετο;&#10;&#10;- Αυτόματη κοινοποίηση όλων των επεισοδίων και ταινιών που παρακολουθείτε&#10;- Συγχρονισμός όλων των επεισοδίων και συλλογών ταινιών στο Trakt (αυτόματα μετά από κάθε ενημέρωση της συλλογής)&#10;- Αυτόματη εκκαθάριση της συλλογής σας στο Trakt ούτως ώστε να ταυτίζεται με αυτή στο Kodi&#10;- Συγχρονισμός όσων παρακολουθήσατε ήδη μεταξύ του Kodi και του Trakt&#10;- Βαθμολογήστε τις ταινίες και τα επεισόδια αφού τα παρακολουθήσετε&#10;&#10;Ευχαριστούμε ιδιαιτέρως όλους όσους συνεισέφεραν σε αυτήν την εφαρμογή! Ελέγξτε το ιστορικό των προσθηκών και αλλαγών για να βρείτε αυτούς τους ταλαντούχους προγραμματιστές.</description>
+		<description lang="en_GB">Automatically scrobble all TV episodes and movies you are watching to Trakt.tv! Keep a comprehensive history of everything you've watched and be part of a global community of TV and movie enthusiasts. Sign up for a free account at http://trakt.tv and get a ton of features:&#10;&#10;- Automatically scrobble what you're watching&#10;- Mobile apps for iPhone, iPad, Android, and Windows Phone&#10;- Share what you're watching (in real time) and rating to facebook and twitter&#10;- Personalized calendar so you never miss a TV show&#10;- Follow your friends and people you're interesed in&#10;- Use watchlists so you don't forget to what to watch&#10;- Track your media collections and impress your friends&#10;- Create custom lists around any topics you choose&#10;- Easily track your TV show progress across all seasons and episodes&#10;- Track your progress against industry lists such as the IMDb Top 250&#10;- Discover new shows and movies based on your viewing habits&#10;- Widgets for your forum signature&#10;&#10;What can this addon do?&#10;&#10;- Automatically scrobble all TV episodes and movies you are watching&#10;- Sync your TV episode and movie collections to Trakt (triggered after a library update)&#10;- Auto clean your Trakt collection so that it matches up with Kodi&#10;- Keep watched statuses synced between Kodi and Trakt&#10;- Rate movies and episode after watching them&#10;&#10;Special thanks to all who contributed to this plugin! Check the commit history and changelog to see these talented developers.</description>
+		<description lang="en_NZ">Automatically scrobble all TV episodes and movies you are watching to Trakt.tv! Keep a comprehensive history of everything you've watched and be part of a global community of TV and movie enthusiasts. Sign up for a free account at http://trakt.tv and get a ton of features:&#10;&#10;- Automatically scrobble what you're watching&#10;- Mobile apps for iPhone, iPad, Android, and Windows Phone&#10;- Share what you're watching (in real time) and rating to facebook and twitter&#10;- Personalised calendar so you never miss a TV show&#10;- Follow your friends and people you're interesed in&#10;- Use watchlists so you don't forget to what to watch&#10;- Track your media collections and impress your friends&#10;- Create custom lists around any topics you choose&#10;- Easily track your TV show progress across all seasons and episodes&#10;- Track your progress against industry lists such as the IMDb Top 250&#10;- Discover new shows and movies based on your viewing habits&#10;- Widgets for your forum signature&#10;&#10;What can this addon do?&#10;&#10;- Automatically scrobble all TV episodes and movies you are watching&#10;- Sync your TV episode and movie collections to Trakt (triggered after a library update)&#10;- Auto clean your Trakt collection so that it matches up with Kodi&#10;- Keep watched statuses synced between Kodi and Trakt&#10;- Rate movies and episode after watching them&#10;&#10;Special thanks to all who contributed to this plugin! Check the commit history and changelog to see these talented developers.</description>
+		<description lang="en_US">Automatically scrobble all TV episodes and movies you are watching to Trakt.tv! Keep a comprehensive history of everything you've watched and be part of a global community of TV and movie enthusiasts. Sign up for a free account at http://trakt.tv and get a ton of features:&#10;&#10;- Automatically scrobble what you're watching&#10;- Mobile apps for iPhone, iPad, Android, and Windows Phone&#10;- Share what you're watching (in real time) and rating to facebook and twitter&#10;- Personalized calendar so you never miss a TV show&#10;- Follow your friends and people you're interesed in&#10;- Use watchlists so you don't forget to what to watch&#10;- Track your media collections and impress your friends&#10;- Create custom lists around any topics you choose&#10;- Easily track your TV show progress across all seasons and episodes&#10;- Track your progress against industry lists such as the IMDb Top 250&#10;- Discover new shows and movies based on your viewing habits&#10;- Widgets for your forum signature&#10;&#10;What can this addon do?&#10;&#10;- Automatically scrobble all TV episodes and movies you are watching&#10;- Sync your TV episode and movie collections to Trakt (triggered after a library update)&#10;- Auto clean your Trakt collection so that it matches up with Kodi&#10;- Keep watched statuses synced between Kodi and Trakt&#10;- Rate movies and episode after watching them&#10;&#10;Special thanks to all who contributed to this plugin! Check the commit history and changelog to see these talented developers.</description>
+		<description lang="es_ES">Haz scrobble automáticamente de todas tus Series de TV y Películas que estés viendo en Trakt.tv! Mantén un historial de todo lo que has visto y se parte de una comunidad global de entusiastas por las Series y Películas. Regístrate gratis en http://trakt.tv y consigue una tonelada de características:&#10;&#10;- Scrobble automático de lo que estás viendo&#10;- Aplicaciones móviles para iPhone, iPad, Android y Windows Phone&#10;- Comparte lo que estás viendo (en tiempo real) y tu valoración en Facebook y Twitter&#10;- Calendario personalizado para que no te pierdas ninguna serie&#10;- Sigue tus amigos y personas de interés&#10;- Usa las watchlists para no olvidarte de lo que quieres ver&#10;- Controla tus colecciones multimedia e impresiona a tus amigos&#10;- Crea listas personalizadas sobre los temas de tu elección&#10;- Controla fácilmente el progreso de los episodios y temporadas de tus Series&#10;- Controla tu progreso en comparación con listas industriales como IMDb TOP 250&#10;- Descubre nuevas Series y Películas basadas en tus hábitos&#10;- Widgets para tu firma en foros&#10;&#10;¿Qué puede hacer este add-on?&#10;&#10;- Scrobble automático de las Episodios y Películas que estás viendo&#10;- Sincronizar tus colecciones Series y Películas con Trakt.tv (después de la actualización de la biblioteca)&#10;- Limpiar automáticamente tu colección de Trakt.tv para que sea idéntica a la de Kodi&#10;- Mantener el mismo estado de visionado entre Kodi y Trakt.tv&#10;- Valorar Películas y Episodios después de verlos&#10;&#10;¡Un agradecimiento especial a todos los que han contribuido en este plugin! Revisa el histórico de commits y el histórico de cambios para ver todos esos desarrolladores con talento.</description>
+		<description lang="fr_FR">Scrobblez automatiquement sur Trakt.tv tous les épisodes TV et les films que vous regardez ! Gardez un historique complet de tout ce que vous avez regardé et prenez part à une communauté globale d'amateurs de TV et de films. Enregistrez-vous pour un compte gratuit sur http://trakt.tv pour accéder à des tonnes de fonctionnalités : - Scrobbler automatiquement ce que vous regardez - Applications mobiles pour iPhone, iPad, Android et Windows Phone - Partager ce que vous regardez (en temps réel) et vos évaluations sur Facebook et Twitter - Calendrier personnalisé pour ne plus jamais rater un épisode - Suivre vos amis et les personnes qui vous intéressent - Utiliser des listes pour ne plus oublier ce que vous voulez regarder - Synchroniser vos collections de media pour impressionner vos amis - Créer des listes personnalisées autour des sujets que vous choisissez - Suivre facilement votre progression dans toutes les saisons et épisodes des séries TV - Comparer votre progression à des listes comme le Top 250 IMDb - Découvrir de nouvelles séries et de nouveaux films en vous basant sur vos habitudes de visionnage - Widget pour votre signature de forum Que peut faire cette extension ? - Scrobbler automatiquement tous les épisodes TV et les films que vous regardez - Synchroniser vos collections d'épisodes TV et de films avec Trakt (déclenché après une mise à jour de la médiathèque) - Nettoyer automatiquement votre collection Trakt pour qu'elle concorde avec Kodi - Garder l'état des visionnages synchronisé entre Kodi et Trakt - Noter les films et épisodes après les avoir regardés Remerciements spéciaux à tous ceux qui ont apporté leur contribution à cette extension ! Allez faire un tout sur l'historique des mises à jour et le journal des changements pour voir ces talentueux développeurs.</description>
+		<description lang="fr_CA">Scrobblez automatiquement tous les épisodes télé et tous les films vers Trakt.tv! Gardez sur Trakt.tv un historique détaillé de tout ce que vous avez regardé et faites partie d'une communauté mondiale de passionnés de télé et de films. Inscrivez-vous à un compte gratuit sur http://trakt.tv et obtenez une tonne de fonctions :&#10;&#10;- Scrobblez automatiquement ce que vous regardez&#10;- Applis mobiles pour Android, iPhone, iPad et Windows Phone&#10;- Partagez ce que vous regardez (en temps réel) et évaluez vers Facebook et Twitter&#10;- Calendrier personnalisé afin que vous ne ratiez jamais aucune émission télé&#10;- Suivez vos amis et les personnes qui vous intéresse&#10;- Utilisez des listes de suivi afin de ne pas oublier quoi regarder&#10;- Suivez vos collections multimédias et impressionnez vos amis&#10;- Créez des listes personnalisées sur tous les sujets que vous choisissez&#10;- Suivez la progression de toutes vos émissions télé, pour toutes les saisons et tous les épisodes&#10;- Suivez votre progression par rapport aux listes de l'industrie telles que les 250 1ers d'IMDb&#10;- Découvrez de nouvelles émissions et de nouveaux films d'après vos habitudes de visionnement&#10;- Widgets pour votre signature de forum&#10;&#10;Que peut faire cet addiciel?&#10;&#10;- Scrobblez automatiquement tous les épisodes télé et tous les films que vous regardez&#10;- Synchronisez vos collections d'épisodes télé et de films avec Trakt (déclenché après une mise à jour de la vidéothèque)&#10;- Autonettoyez votre collection Trakt afin qu'elle corresponde à Kodi&#10;- Synchronisez les états de visionnement entre Kodi et Trakt&#10;- Évaluez les films et les épisodes après les avoir regardés&#10;&#10;Remerciements particuliers à tous ceux qui ont contribué au développement de cet addiciel! Consultez l'historique des validations et le journal des changements pour obtenir la liste de ces développeurs talentueux.</description>
+		<description lang="he_IL">Automatically scrobble all TV episodes and movies you are watching to Trakt.tv! Keep a comprehensive history of everything you've watched and be part of a global community of TV and movie enthusiasts. Sign up for a free account at http://trakt.tv and get a ton of features:&#10;&#10;- Automatically scrobble what you're watching&#10;- Mobile apps for iPhone, iPad, Android, and Windows Phone&#10;- Share what you're watching (in real time) and rating to facebook and twitter&#10;- Personalized calendar so you never miss a TV show&#10;- Follow your friends and people you're interesed in&#10;- Use watchlists so you don't forget to what to watch&#10;- Track your media collections and impress your friends&#10;- Create custom lists around any topics you choose&#10;- Easily track your TV show progress across all seasons and episodes&#10;- Track your progress against industry lists such as the IMDb Top 250&#10;- Discover new shows and movies based on your viewing habits&#10;- Widgets for your forum signature&#10;&#10;What can this addon do?&#10;&#10;- Automatically scrobble all TV episodes and movies you are watching&#10;- Sync your TV episode and movie collections to Trakt (triggered after a library update)&#10;- Auto clean your Trakt collection so that it matches up with Kodi&#10;- Keep watched statuses synced between Kodi and Trakt&#10;- Rate movies and episode after watching them&#10;&#10;Special thanks to all who contributed to this plugin! Check the commit history and changelog to see these talented developers.</description>
+		<description lang="it_IT">Esegui automaticamente lo scrobbling di tutti gli episodi televisivi e dei film che guardi su Trakt.tv! Mantieni uno storico completo di tutto ciò che hai visto e prendi parte a una comunità globale di appassionati di TV e film. Registrati per avere un account gratuito su http://trakt.tv e ottieni una tonnellata di funzioni:&#10;&#10;- Scrobbling automatico di quello che stai guardando&#10;- Applicazioni mobili per iPhone, iPad, Android e Windows Phone&#10;- Condividi su Facebook e Twitter ciò che guardi (in tempo reale) e la tua valutazione&#10;- Calendario personalizzato in modo da non perdere mai una puntata di uno show televisivo&#10;- Segui i tuoi amici e le persone che ti interessano&#10;- Usa la Watchlist in modo da non dimenticare cosa guardare&#10;- Tieni traccia delle tue raccolte multimediali e impressiona i tuoi amici&#10;- Crea liste personalizzate su qualsiasi argomento&#10;- Monitora facilmente i tuoi progressi nella visione degli show televisivi in tutte le stagioni ed episodi&#10;- Confronta i tuoi progressi con le liste di settore come la IMDb Top 250&#10;- Scopri nuovi spettacoli e film in base alle tue abitudini di visione&#10;- Widget per la firma del forum&#10;&#10;Che cosa può fare questa add-on?&#10;&#10;- Scrobble automatico di tutti gli episodi televisivi e film che vengono guardati&#10;- Sincronizzazione dei tuoi episodi TV e delle collezioni di film di Trakt (attivata dopo un aggiornamento della libreria)&#10;- Pulizia automatica della collezione Trakt in modo da farla corrispondere con Kodi&#10;- Mantenere lo stato delle visioni sincronizzate tra Kodi e Trakt&#10;- Votazione di ogni puntata o film dopo la visualizzazione&#10;&#10;Un ringraziamento speciale a tutti coloro che hanno contribuito a questo plugin! Controllate la storia dei commit e la lista dei cambiamenti per vedere questi sviluppatori di talento.</description>
+		<description lang="ko_KR">시청 중인 모든 TV 쇼 에피소드와 영화 정보를 자동으로 Trakt.tv에 전송합니다! 사용자가 시청한 모든 이력을 자세히 보관하고 전세계의 TV, 영화 커뮤니티의 일원으로 참여하세요. http://Trakt.tv에서 무료 회원으로 가입하고 다양한 기능을 활용하세요:&#10;&#10;- 시청 중인 영화와 에피소드 정보를 자동으로 전송&#10;- iPhone, iPad, Android, Windows Phone 앱 지원&#10;- 시청 중 정보를 (실시간)으로 Facebook과 twitter로 공유하고 평가&#10;- 개인 캘린더로 TV 쇼 본방송을 놓치지 마세요&#10;- 친구와 관심있는 사람을 팔로우 하세요&#10;- 꼭 봐야 할 것들을 잊지 않기 위해 Watclist를 사용하세요&#10;- 여러분의 컬렉션을 관리하고 친구들을 감동 시키세요&#10;- 여러분이 선택한 모든 주제의 목록을 만드세요&#10;- 여러분의 TV 쇼 시청 진행 상태를 시즌별 에피소드별로 쉽게 기록하고 관리하세요&#10;- 여러분의 시청 상태를 IMDb Top 250 같은 목록과 비교해 보세요&#10;- 여러분이 시청한 자료를 토대로 새로운 영화와 TV쇼를 찾아보세요&#10;- 커뮤니티 포럼의 Widgets 으로 활용하세요&#10;&#10;이 애든온이 할 수 있는 것은?&#10;&#10;- 시청 중인 영화와 에피소드 정보를 자동으로 전송&#10;- 여러분의 TV 에피소드와 영화 컬렉션을 Trakt와 동기화 (라이브러리를 업데이트할 때 작동)&#10;- Kodi 라이브러리와 일치하도록 Trakt 컬렉션 자동 정리&#10;- Kodi와 Trakt 사이의 시청 정보 동기화&#10;- 영화와 에피소드를 시청한 후 평가하기&#10;&#10;이 플러그인에 공헌한 모든 이에게 감사드립니다! 재능있는 이 개발자들을 확인하려면 커밋 이력과 변경사항을 확인하기 바랍니다.</description>
+		<description lang="lt_LT">Automatiškai užregistruoti visus TV epizodus ir filmus, kuriuos žiūrite, Trakt.tv sistemoje! Laikykite išsamią istoriją visko, ką peržiūrėjote ir būkite globalios TV ir filmų entuziastų bendruomenės dalimi. Susikurkite nemokamą paskyrą http://trakt.tv puslapyje ir gaukite daugybę funkcionalumų:&#10;&#10;- Automatiškai užregistruokite tai, ką žiūrite&#10;- Mobilios programelės, skirtos iPhone, iPad, Android ir Windows Phone&#10;- Dalinkitės tuo, ką žiūrite (realiuoju laiku) ir įvertinimais facebook ir twitter sistemose&#10;- Suasmenintas kalendorius, kad niekada nepraleistumėte TV laidos&#10;- Sekite savo draugus ir žmones, kuriais domitės&#10;- Naudokite peržiūros sąrašą, kad nepamirštumėte ką norite peržiūrėti&#10;- Sekite savo media kolekciją ir padarykite įspūdį savo draugams&#10;- Sukurkite savus sąrašus bet kokia pasirinkta tema&#10;- Lengvai sekite TV laidos progresą tarp visų sezonų ir epizodų&#10;- Sekite savo progresą tarp industrinių sąrašų, tokių kaip IMDb Top 250&#10;- Atraskite naujas laidas ir filmus pagal savo žiūrėjimo įpročius&#10;- Valdiklis jūsų forumo paskyros parašui&#10;&#10;Ką gali šis priedas?&#10;&#10;- Automatiškai registruoti visus TV epizodus ir filmus, kuriuos žiūrite&#10;- Sinchronizuoti jūsų TV epizodų ir filmų kolekciją su Trakt.tv (vykdoma po bibliotekos atnaujinimo)&#10;- Automatiškai išvalyti jūsų Trakt.tv kolekciją, kad ji sutaptų su Kodi&#10;- Išlaikyti peržiūrėjimo būsenas sinchronizuotas tarp Kodi ir Trakt.tv&#10;- Įvertinti filmus ir epizodus juos peržiūrėjus&#10;&#10;Specialus ačiū visiems, kurie prisidėjo prie šio įskiepio! Patikrinkite kodo istoriją ir pakeitimų sąrašą, kad pamatytumėte šiuos talentingus kūrėjus.</description>
+		<description lang="nl_NL">Scrobble automatisch alle TV afleveringen en films die je aan bekijken bent naar Trakt.tv! Hou een uitgebreide historie bij van alles wat je hebt bekeken en maak deel uit van een wereldwijde gemeenschap van TV- en filmliefhebbers. Schrijf je in voor een gratis account op http://trakt.tv en krijg een enorme hoeveelheid aan mogelijkheden:&#10;&#10;- Automatisch scrobblen wat je aan het bekijken bent&#10;- Mobiele apps voor iPhone, iPad, Android en Windows Phone&#10;- Deel wat je aan het bekijken ben (gelijktijdig) en stuur je waardering door naar Facebook en Twitter&#10;- Persoonlijke kalender zodat je nooit een TV aflevering mist&#10;- Volg je vrienden en mensen waarin je ben geïnteresseerd&#10;- Gebruik kijklijsten zodat je niets mist van wat je wilt kijken&#10;- Leg je eigen mediaverzameling aan en maak indruk op je vrienden&#10;- Maak aangepaste lijsten over onderwerpen die je zelf kiest&#10;- Volg het verloop van je tv serie voor alle seizoenen en afleveringen&#10;- Vergelijk je bekeken films en series met bekende lijsten zoals de IMDb Top 250&#10;- Ontdek nieuwe series en films gebaseerd op jouw kijk gewoonten&#10;- Widgets voor jouw forum handtekening&#10;&#10;Wat kan deze add-on doen?&#10;&#10;- Automatisch scrobblen van alle TV afleveringen en films die je aan het bekijken bent&#10;- Synchroniseer je TV afleveringen en film collecties naar Trakt (start na een bibliotheekupdate)&#10;- Automatisch opschonen van je Trakt collectie zodat deze overeenkomt met Kodi&#10;- Houdt  de bekeken status gesynchroniseerd tussen Kodi en Trakt&#10;- Geef een cijfer aan films en afleveringen na ze te hebben bekeken&#10;&#10;Speciale dank aan allen die hebben meegeholpen met deze plugin! Bekijk de commentaar historie en wijzigingenlijst om deze getalenteerde ontwikkelaars te zien.</description>
+		<description lang="nb_NO">Scrobble alle TV-episoder og filmer du ser til Trakt.tv! Hold en omfattende oversikt av alt du har sett og bli en del av et globalt samfunn av TV og filmentusiaster. Meld deg inn og få en gratis konto på http://trakt.tv og få tilgang til en haug av funksjoner:&#10;&#10;- Scrobble det du ser automatisk&#10;- Mobile applikasjoner for iPhone, iPad, Android og Windows Phone&#10;- Del det du ser (i sanntid) og vurderinger til Facebook og Twitter&#10;- Personalisert kalender så du ikke går glipp av favorittprogrammene dine&#10;- Følg vennene dine og folk du er interessert i&#10;- Bruk overvåkingsliste så du ikke glemmer hva du skal se&#10;- Spor mediasamlingen og imponer venner&#10;- Lag tilpassede lister basert på egne emner&#10;- Spor fremgangen din på TV-programmer på tvers av sesonger og episoder&#10;- Spor fremgangen din mot lister som IMDb Top 250&#10;- Oppdag nye TV-programmer og filmer basert på vanene dine&#10;- Widgets som forumsignatur&#10;&#10;- Hva kan denne utvidelsen gjøre?&#10;&#10;- Scrobble alle TV-episoder og filmer som du ser på automatisk&#10;- Synkronisere TV-episode og filmsamlinger til Trakt (trigges etter biblioteksoppdatering)&#10;- Automatisk opprydning i Trakt-samlingen så den samsvarer med Kodi&#10;- Hold sett-statuser synkronisert mellom Kodi og Trakt&#10;- Vurder filmer og episoder etter å ha sett de&#10;&#10;Takk til alle som har bidratt til denne utvidelsen! Sjekk commit-historien og endringsloggen for å se disse talentfulle utviklerene.</description>
+		<description lang="pl_PL">Automatyczna rejestracja obejrzanych odcinków serialów i film w serwisie Trakt.tv! Przechowuj pełną historię wszystkich obejrzanych mediów i bądź częścią globalnej społeczności entuzjastów multimediów. Zarejestruj swoje konto za darmo na http://trakt.tv i uzyskaj dostęp do mnóstwa funkcji:&#10;- automatycznej rejestracji obejrzanych mediów&#10;- mobilnych aplikacji na iPhone'a, iPada, Androida i Windows Phone&#10;- publikacji obejrzanych mediów i ich oceny (w czasie rzeczywistym) w serwisach Facebook i Twitter&#10;- osobistego kalendarza, żebyś nigdy nie przegapił emisji serialu&#10;- śledzenia aktywności znajomych i osób, którymi się interesujesz&#10;- listy pozycji do obejrzenia, żebyś nigdy nie zapomniał tego, co chcesz obejrzeć&#10;- udostępniania swojej kolekcji mediów, którą możesz zaimponować swoim znajomym&#10;- tworzenia niestandardowych list skupionych na wybranym temacie&#10;- łatwego śledzenia postępów oglądania sezonów i odcinków serialu&#10;- porównywania własnych postępów oglądania z publicznymi listami takimi jak lista Top 250 serwisu IMDb&#10;- odkrywanie nowych seriali i filmów na podstawie preferencji&#10;&#10;Co potrafi ten dodatek?&#10;&#10;- rejestrować automatycznie odtwarzania wszystkich odcinków seriali i filmów&#10;- synchronizację biblioteki filmów i odcinków seriali z kolekcją Trakt (uruchamianą po aktualizacji biblioteki)&#10;- czyszczenie kolekcji Trakt w celu pełnego dopasowania z biblioteką Kodi&#10;- utrzymywanie synchronizacji stanów obejrzenia między biblioteką Kodi a kolekcją Trakt&#10;- możliwość oceny filmów i odcinków seriali zaraz po obejrzeniu&#10;&#10;Specjalne podziękowania dla wszystkich, którzy wnieśli swój wkład w tworzenie tego dodatku! Przejrzyj historię i dziennik zmian, aby poznać tych utalentowanych programistów.</description>
+		<description lang="pt_PT">Automaticamente faça scrobble de filmes e séries que está a ver para o Trakt.tv! Mantenha um histórico de tudo o que visualizou e faça parte de uma comunidade de entusiastas de filmes e séries. Inscreva-se gratuitamente para uma conta em http://trakt.tv e receba uma tonelada de funcionalidades:&#10;&#10;- Scrobble automático quando está a visualizar&#10;- Aplicações moveis para iPhone, iPad, Android, Windows Phone e Blackberry&#10;- Partilhe o que está a visualizar (em tempo real) e as suas classificações no facebook e twitter&#10;- Calendário personalizado de forma a nunca perder uma série&#10;- Siga os seus amigos e pessoas de interesse&#10;- Use listas para não esquecer o que ver&#10;- Mostre as suas bibliotecas de filmes e séries aos seus amigos&#10;- Crie listas personalizadas sobre os assuntos que quiser&#10;- Verifique que espisódios já visualizou e quais faltam ver&#10;- Veja que filmes tem do IMDB TOP 250&#10;- Descubra novos filmes e séries com base nos que já viu&#10;- Widgets para usar na assinatura de fóruns&#10;&#10;O que pode este addon fazer?&#10;- Scrobble automático de todos os filmes e episódios de séries que está a ver&#10;- Sincronização dos filmes e episódios de séries vistos com o Trakt (após um update da biblioteca)&#10;- Limpeza automática do Trakt de forma a ficar igual ao Kodi&#10;- Manter as visualizações sincronizadas entre o Trakt e o Kodi&#10;- Classifique filmes e episódios após visualização&#10;&#10;Um obrigado especial a todos os que contribuíram para este plugin! Veja o github e o changelog para ver quem são estes programadores talentosos.</description>
+		<description lang="pt_BR">Automaticamente faça scrobble de filmes e seriados que está a assistir para o Trakt.tv! Mantenha um histórico de tudo o que assistiu e faça parte de uma comunidade de entusiastas de filmes e seriados. Inscreva-se gratuitamente para uma conta em http://trakt.tv e receba uma tonelada de funcionalidades:&#10;&#10;- Scrobble automático quando está a assistir&#10;- Aplicações moveis para iPhone, iPad, Android, Windows Phone e Blackberry&#10;- Partilhe o que está a assistir (em tempo real) e as suas classificações no facebook e twitter&#10;- Calendário personalizado de forma a nunca perder um seriado&#10;- Siga os seus amigos e pessoas de interesse&#10;- Use listas para não esquecer o que ver&#10;- Mostre as suas bibliotecas de filmes e seriados aos seus amigos&#10;- Crie listas personalizadas sobre os assuntos que desejar&#10;- Verifique que espisódios já assistiu e quais faltam assistir&#10;- Veja que filmes tem do IMDB TOP 250&#10;- Descubra novos filmes e seriados com base nos que já assistiu&#10;- Widgets para usar na assinatura de fóruns&#10;&#10;O que pode este addon fazer?&#10;- Scrobble automático de todos os filmes e episódios de TV que está a assistir&#10;- Sincronização dos filmes e episódios de TV assistidos com o Trakt (após um update da biblioteca)&#10;- Limpeza automática do Trakt de forma a ficar igual ao Kodi&#10;- Manter as visualizações sincronizadas entre o Trakt e o Kodi&#10;- Classifique filmes e episódios após visualização&#10;&#10;Um obrigado especial a todos os que contribuíram para este plugin! Veja o github e o changelog para ver quem são estes programadores talentosos.</description>
+		<description lang="sk_SK">Automaticky synchronizujte informácie na Trakt.tv o všetkých seriáloch a filmoch ktoré sledujete.</description>
+		<description lang="sv_SE">Skrobbla automatiskt alla TV-serie avsnitt och filmer du tittar på till Trakt.tv! Samla en innehållsrik historik om allt du tittar på och var en del av ett globalt kollektiv av TV och film entusiaster. Skapa ett gratis konto på http://trakt.tv och ta del av massor av funktioner.&#10;&#10;- Skrobbla automatiskt vad du tittar på&#10;- Appar för iPhone, iPad, Android och Windows Phone&#10;- Dela vad du tittar på (i realtid) samt dina betyg på Facebook och Twitter&#10;- Personlig kalender så du aldrig missar en TV serie&#10;- Följ dina vänner och andra intressanta personer&#10;- Använd "att se" listor så du inte glömmer vad du skall se&#10;- Spåra dina media samlingar och imponera på dina vänner&#10;- Skapa listor för olika ämnen som du väljer&#10;- Spåra lätt hur mycket av en TV serie du sett, över alla säsonger och avsnitt&#10;- Jämför hur mycket film du har sett mot flera viktiga listor inom industrin, t.ex. IMDb Top 250&#10;- Upptäck nya TV serier och filmer baserat på din historik&#10;- Widgets för din forum signatur&#10;&#10;Vad kan detta addon göra?&#10;&#10;- Skrobbla automatiskt alla TV-serie avsnitt och filmer du tittar på&#10;- Synkronisera dina samlingar av film och Tv-serier till Trakt (startas efter en uppdatering av ditt bibliotek i Kodi)&#10;- Städa automatiskt din Trakt samling så den stämmer med Kodi.&#10;- Synkronisera sedd/osedd status mellan Kodi och Trakt&#10;- Betygsätt filmer och TV-serier avsnitt efter du har sett dem&#10;&#10;Ett stort tack till alla som bidragit till detta plugin! Se loggen för tillägg och ändringar för att se vilka dessa talangfulla utvecklare är.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=220547</forum>
+		<website>http://trakt.tv</website>
+		<email></email>
+		<source>https://github.com/trakt/script.trakt</source>
+		<news>  - Improved id matching for different metadata providers
+  - Added various refactoring and testing
+  - Improve mathing for movies with the same name
+  - Moved to new language structure</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/image-01.png</screenshot>
+        <screenshot>resources/image-02.png</screenshot>
+        <screenshot>resources/image-03.png</screenshot>
+    </assets>
+	</extension>
+</addon>
+
+<!-- DATE UTIL -->
+<addon id="script.module.dateutil" name="dateutil" version="2.5.3" provider-name="Gustavo Niemeyer, Tomi Pieviläinen, Yaron de Leeuw, Razzeee">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.six" version="1.9.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>dateutil - powerful extensions to datetime</summary>
+		<description>Packed for Kodi from https://github.com/dateutil/dateutil</description>
+		<platform>all</platform>
+		<language></language>
+		<license>Revised BSD License</license>
+		<forum></forum>
+		<website>https://dateutil.readthedocs.org/en/latest/</website>
+		<source>https://github.com/Razzeee/script.module.dateutil</source>
+		<email></email>
+	</extension>
+</addon>
+
+<!-- ADDON SIGNALS -->
+<addon id="script.module.addon.signals" name="Addon Signals" version="0.0.3" provider-name="Rick Phillips (ruuk)">
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Inter-addon signalling</summary>
+		<description lang="en">Provides signal/slot mechanism for inter-addon communication</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/ruuk/script.module.addon.signals</source>
+	</extension>
+</addon>
+
+<!-- REQUESTS -->
+<addon id="script.module.requests" name="requests" version="2.19.1" provider-name="kennethreitz">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.urllib3" version="1.22"/>
+		<import addon="script.module.chardet" version="3.0.4"/>
+		<import addon="script.module.idna" version="2.6"/>
+		<import addon="script.module.certifi" version="2017.07.27.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Python HTTP for Humans</summary>
+		<description lang="en_GB">Packed for KODI from https://github.com/requests/requests</description>
+		<platform>all</platform>
+		<language></language>
+		<license>Apache2</license>
+		<forum></forum>
+		<website>http://python-requests.org</website>
+		<source>https://github.com/beenje/script.module.requests</source>
+		<email>beenje AT gmail.com</email>
+	</extension>
+</addon>
+
+<!-- SIX -->
+<addon id="script.module.six" name="six" version="1.11.0" provider-name="gutworth">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Python 2 and 3 compatibility utilities.</summary>
+		<description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+		<platform>all</platform>
+		<license>MIT</license>
+		<source>https://pypi.python.org/pypi/six</source>
+		<website>https://pypi.python.org/pypi/six</website>
+	</extension>
+</addon>
+
+<!-- ARROW -->
+<addon id="script.module.arrow" name="arrow" version="0.10.0" provider-name="crsmithdev, Razzeee">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.dateutil" version="2.4.2"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Arrow: better dates and times for Python</summary>
+		<description>Packed for Kodi from https://github.com/crsmithdev/arrow</description>
+		<platform>all</platform>
+		<language></language>
+		<license>Apache2</license>
+		<forum></forum>
+		<website>http://crsmithdev.com/arrow/</website>
+		<source>https://github.com/Razzeee/script.module.arrow</source>
+		<email>beenje AT gmail.com</email>
+	</extension>
+</addon>
+
+<!-- TWITCH -->
+<addon id="script.module.python.twitch" name="python-twitch for Kodi" version="1.1.0" provider-name="A Talented Community">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.six" version="1.9.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="resources/lib"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<news>
+*** Twitch API V5 is deprecated and will be removed entirely on 2/14/18
+*** script.module.python.twitch v2 will include the Twitch helix API, and may include breaking changes to current implementations. If you rely on this module follow development at https://github.com/MrSprigster/script.module.python.twitch
+[fix/upd] v5.channels deprecated notations for community endpoints, add new communities endpoints
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<platform>all</platform>
+		<summary lang="en">Module for interaction with the Twitch.tv API</summary>
+		<description lang="en">python-twitch for Kodi is module for interaction with the Twitch.tv API based on python-twitch by ingwinlu.</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum> </forum>
+		<source>https://github.com/MrSprigster/script.module.python.twitch</source>
+	</extension>
+</addon>
+
+<!-- YOUTUBE -->
+<addon id="plugin.video.youtube" name="YouTube" version="6.1.4" provider-name="bromix">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.six"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+		<import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="resources/lib/startup.py" start="login"/>
+	<extension point="xbmc.python.module" library="resources/lib/"/>
+	<extension point="xbmc.addon.metadata">
+		<news>
+6.1.4
+[fix] Signature function not found
+
+6.1.3
+[fix] timedelta.total_seconds python 2.6 compat.
+
+6.1.2
+[fix] dash settings check and defaults
+[fix] addon-check raised warning for services complex entry point
+[fix] codacy raised issue in http server (https://app.codacy.com/app/Kodi/repo-plugins/pullRequest?prid=2080401)
+[chg] move seek to onPlayBackStarted, onAVStarted only in K18
+[chg] geolocation provider changed from ipstack to ip-api
+[del] frodo listitem art compatibility
+[lang] ru_ru strings |contrib: Burgaduk|
+[lang] zh_tw strings |contrib: Zankio|
+
+6.1.1
+[fix] http proxy using incorrect setting id causing 403 errors
+
+6.1.0
+[add] Multi-user support
+	- Switch User folder (default: on) Settings -&gt; Folders
+	- User management (Add, Remove, Rename, Switch) Settings - Users
+	- Signed in users are green, Current user has an *
+[add/upd] add data cache and optimize caching
+	- add Settings -&gt; Maintenance -&gt; Clear data cache/Delete data cache
+	- increase allowed cache size
+	- database accesses per 50 videos: before: 70~100 after: 4~6
+	- load time of 50 videos w/ no cached videos: before: ~11.6 secs, after: ~3 secs
+	- load time of 50 videos w/ all cached videos: before: ~0.8 secs, after: ~0.7 secs
+	- cached size per 50 videos: before ~1MB, after ~550KB
+[add] Refresh after watching (default: off) Settings -&gt; General
+[add] Completed Live folder (default: on) Settings -&gt; Folders
+[add] Upcoming Live folder (default: on) Settings -&gt; Folders
+[add] My Location folder (default: on) Settings -&gt; Advanced -&gt; Enable setup-wizard
+[add] Play count minimum percent (default: 85%) Settings -&gt; General -&gt; Play count minimum percent
+[add] Playback history (default: off) Settings -&gt; Advanced -&gt; Use playback history
+[add] Time since published for videos as item properties Property(PublishedSince), Property(PublishedLocal) |contrib: pannal|
+[add] Check My IP, Settings -&gt; HTTP Server
+[add] Developer authentication, allowing add-ons to use their own access tokens
+	- see youtube_authentication.py, youtube_registration.py, youtube_requests.py, and youtube_resolver.py
+[upd] YouTube UTC datetimes to local timezone |contrib: pannal|
+[upd] Localize API key errors, provide a more descriptive notification
+[fix] Add to YouTube watch history
+[fix] My Channel videos (Error 403)
+[fix] allow fallback to dash, when using Audio only
+[fix] Signature function not found error for some users
+[fix] Context Menu -&gt; More -&gt; Related Videos w/ Kodi 18
+[fix] Sign In/Sign Out causing crash with Kodi 18 nightlies
+[fix] Channel &#39;mine&#39; caching
+[fix] Time changing when playing generated dash
+[lang] es_es strings |contrib: roliverosc|
+[lang] el_gr strings |contrib: twilight0|
+[lang] nl_nl strings |contrib: Markman-B|
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<summary lang="en_gb">Plugin for YouTube</summary>
+		<description lang="en_gb">YouTube is one of the biggest video-sharing websites of the world.</description>
+		<disclaimer lang="en_gb">This plugin is not endorsed by Google</disclaimer>
+		<summary lang="he_il">תוסף עבור YouTube</summary>
+		<description lang="he_il">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
+		<summary lang="de_de">Plugin für YouTube</summary>
+		<description lang="de_de">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
+		<summary lang="pl_pl">Wtyczka YouTube</summary>
+		<description lang="pl_pl">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
+		<summary lang="hu_hu">YouTube kiegészítő</summary>
+		<description lang="hu_hu">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+		<summary lang="es_es">Plugin para YouTube</summary>
+		<description lang="es_es">YouTube es uno de los mayores sitios web de intercambio de vídeos del mundo.</description>
+		<disclaimer lang="es_es">Este add-on no esta respaldado por Google</disclaimer>
+		<summary lang="ru_ru">Видеодополнение YouTube</summary>
+		<description lang="ru_ru">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
+		<summary lang="fr_fr">Plugin pour YouTube</summary>
+		<description lang="fr_fr">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+		<summary lang="zh_cn">YouTube附加元件</summary>
+		<description lang="zh_cn">「Youtube」是全世界最大的影片分享網站</description>
+		<summary lang="zh_tw">YouTube附加元件</summary>
+		<description lang="zh_tw">「Youtube」是全世界最大的影片分享網站</description>
+		<disclaimer lang="zh_tw">此附加元件未由Google支持</disclaimer>
+		<summary lang="bg_bg">Добавка за YouTube</summary>
+		<description lang="bg_bg">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+		<summary lang="el_gr">Πρόσθετο YouTube</summary>
+		<description lang="el_gr">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
+		<disclaimer lang="el_gr">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
+		<summary lang="nb_no">Tillegg for YouTube</summary>
+		<description lang="nb_no">YouTube er en av verdens største nettsider for videodeling.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
+		<website>https://www.youtube.com</website>
+		<email>ytplugin at datanet dot ws</email>
+		<source>https://github.com/jdf76/plugin.video.youtube</source>
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+	</extension>
+</addon>
+
+<!-- CRYPTOPY -->
+<addon id="script.module.cryptopy" name="CryptoPy" version="1.2.6" provider-name="cryptopy.sourceforge.net">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- BEAUTIFULSOUP -->
+<addon id="script.module.beautifulsoup" name="BeautifulSoup" version="3.2.1" provider-name="Leonard Richardson (leonardr@segfault.org)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+		<description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+		<license>BSD</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- FUTURES -->
+<addon id="script.module.futures" name="futures" version="2.2.0" provider-name="Brian Quinlan">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>A futures implementation for Python</summary>
+		<description>Backport of the concurrent.futures package from Python 3.2</description>
+		<platform>all</platform>
+		<license>BSD</license>
+		<source>https://code.google.com/p/pythonfutures/source/browse</source>
+		<website>https://code.google.com/p/pythonfutures</website>
+	</extension>
+</addon>
+
+<!-- UNIVERSALSCRAPERS -->
+<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.0" provider-name="Team Universal">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.futures" version="2.2.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.six"/>
+		<import addon="repository.universalscrapers"/>
+		<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+		</description>
+		<license>GPL v3</license>
+		<source>https://</source>
+	</extension>
+</addon>
+<addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="universalscrapers">
+		<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+		<description>carrying on the dream</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- INCURSION -->
+<addon id="plugin.video.incursion" version="0.1.15" name="Incursion" provider-name="Incursion">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.incursion" />
+		<import addon="script.incursion.artwork" />
+		<import addon="script.incursion.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="incursion.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Incursion</summary>
+		<description lang="en">[I]New Resistance[/I][CR][CR][B]Incursion - Media for the Masses[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>
+v0.1.15 (FEB-2018)
+Fixed "Trakt - Mark as Watched" Issues
+Added Trakt Bookmarks Function
+Added Auto Resume Option
+Trakt On Deck - Reversed to show last played first.
+		</news>
+	</extension>
+</addon>
+<addon id="script.incursion.artwork" version="1.0.7" name="Incursion Artwork" provider-name="Incursion">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Incursion Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+<addon id="script.incursion.metadata" version="1.0.3" name="Incursion Metadata" provider-name="Incursion">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Incursion Addon</summary>
+		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+<addon id="script.module.incursion" name="Incursion Module" version="1.17" provider-name="Incursion">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Incursion</summary>
+	</extension>
+</addon>
+
+<!-- PLACENTA -->
+<addon id="plugin.video.placenta" version="1.4.5" name="Placenta" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.placenta" />
+		<import addon="script.placenta.artwork" />
+		<import addon="script.placenta.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+        <import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+        <provides>audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Placenta</summary>
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<license>Beerware rev. 42</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+<addon id="script.module.placenta" name="Placenta Module" version="1.7.5" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Placenta</summary>
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+	</extension>
+</addon>
+<addon id="script.placenta.artwork" version="1.0.8" name="Placenta Artwork" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Placenta Addon</summary>
+		<description>Artwork Module for the Placenta Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+<addon id="script.placenta.metadata" version="1.0.1" name="Placenta Metadata" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Placenta Addon</summary>
+		<description>Metadata for Placenta are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <!-- ORION -->
-<addon id="script.module.orion" version="1.2.1" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="1.2.2" name="Orion" provider-name="Orion">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="repository.orion" version="1.0.0" optional="true" />

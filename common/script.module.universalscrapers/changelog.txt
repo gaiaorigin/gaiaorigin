@@ -1,0 +1,191 @@
+05/09/2018 v.1.1.0
+client.py edit
+04/09/2018 v.1.0.9.9
+whoops
+04/09/2018 v.1.0.9.8
+Added:
+Streamdreams.py
+vkflix.py
+m4ufree.py
+
+Fixed:
+changes to client
+bnw.py
+movienolimit.py
+streamango.py
+extramovies.py
+filuit.py
+mvlinks.py
+oceanof.py
+cmovies.py
+movie4u.py
+
+Removed:
+darewatch.py
+yify.py
+watch32.py
+
+
+25/08/18 v.1.0.9.7
+
+Added:
+Movienolimit.py
+cmovies.py
+filut.py
+
+Fixed:
+hdvix.py
+cooltv.py
+hdpopcon.py
+watch32.py
+seriesonline8.py
+
+
+3/08/18 v.1.0.9.6
+Added:
+hdvix.py
+putlocker_online.py
+streamango.py
+
+Fixed:
+mvlinks.py
+
+Removed:
+cenflix.py
+movie25.py
+cinebloom.py
+iwatchflix.py
+pandamovie.py
+putlockers.py
+moviewatcher.py
+movieseriestv.py
+
+15/07/18 v1.0.9.5
+Fixed:
+Seehd.py
+coolmoviezone.py
+myvlinks.py
+
+
+02/07/18 v1.0.9.4
+Added: 
+new hl.py 
+PandaMovie.py
+Moviefull.py
+Extramovies.py
+Movieseries.py
+iwatchflix.py
+yify.py
+tvmoviestream.py
+hdpopcorn.py
+
+Fixed:
+Seehd.py
+cenflix.py
+myvlinks.py
+
+Removed:
+watchnewmovies.py
+allrelease.py
+bobmovies.py
+housemovies.py
+onfreecin.py
+moviesfoundonline.py
+zoonema.py
+ddown.py
+watchfree.py
+
+
+27/06/18 v1.0.9.3 
+Fixed mvlinks, wrzcraft, twoddl, putlocker, and zoocinema. Added one23movies and cenflix. Removed tvrelease and vex. 
+
+04/06/18 v1.0.9.2 
+Added:Putlockers.py(thanks O), Moviefisher.py, Mihanpix.py(thanks Dem),tornadomov.py,  watchnewmovies.py, movie321.py,onfreecin.py Fixed:Movdb.py, watch32.py, putlockerhd.py,serieswatch.py,oceanof.py,mvlinks.py,zoocinema.py,moviesfoundonline.py (Thank you Big D) Removed: Prontv.py 
+
+15/5/18/ v1.0.9.1 Added: Seriesonline8.py, Housemovie.py Fixed:Darewatch.py, Bobmovies.py,vexmovies.py. 
+
+5/5/18 v1.0.9 Added: movdb.py,seehd.py, mp3guild.py, Fixed: moviewatcher.py, mvlinks.py, allreleases.py, bobmovies.py Removed: carthd.py, hugemoviesdb.py, movie4k.py. 28/4/18 v1.0.8
+massive thanks to the 'O'racle
+for the new and improved test area
+reduced scrapers to improve performace 
+removing dead/slow scrapers
+
+22/04/18 v1.0.7
+complete check of scrapers,
+remove dead and seperate slow 
+big overhaul on testing section and logging
+Big thanks to "Big Daddy"
+
+
+19/04/18 v1.0.6
+
+Fixed:
+allrelease
+releasebb
+oceanof
+twoddl
+cfmodule
+putlockerTF
+
+Removed:
+scnsrc
+ten80p
+
+
+
+30/03/2018 v1.0.5
+
+Fixed:
+Flenix
+Filmaypik
+carthd
+Cinemamega
+
+Added:
+Projectfreetv
+Projectfreetvmovies
+Serieswatch
+Alluno
+Novamovie
+Newmovieonline
+
+
+26/03/201 v 1.0.4.5: Error fix 
+3/16/2018 V 1.0.3
+Added:
+vexmovies
+Scnsrc
+Filmclub
+Prontv
+Movieurlz
+fanstashtv
+hdonline
+allrelease
+Losmovies
+
+Fixed:
+Bobmovies
+Mvlinks
+
+2/26/2018 V 1.0.2
+Chillnflix.py removed
+
+2/25/18 V 1.0.1
+
+updated proxy.py
+extramovies.py update
+bnw.py update
+ydmoviez.py add
+themovietime.py add
+watchfullmovie.py add
+tvmoviestream.py add
+chillinflix.py add
+alluc.py update
+animetoon.py update
+couchtuner.py update
+releasebb.py update 
+seriescravings.py update
+mvlinks.py add
+
+V1.0.0 
+birth
