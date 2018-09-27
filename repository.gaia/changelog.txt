@@ -1,4 +1,7 @@
 
+[B]3.2.1 (2018.09.27)[/B]
+- Changed icon.
+
 [B]3.2.0 (2018.09.16)[/B]
 - Changed to a single repository.
 
