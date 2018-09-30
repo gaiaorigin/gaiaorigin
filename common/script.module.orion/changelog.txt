@@ -1,4 +1,7 @@
 
+[B]1.2.3 (2018.09.29)[/B]
+- Possible solution for settings reset.
+
 [B]1.2.2 (2018.09.26)[/B]
 - Improved scraping time.
 - Fixed dynamic filter saving.
