@@ -1,4 +1,7 @@
 
+[B]1.2.4 (2018.10.01)[/B]
+- Added automatic settings backup.
+
 [B]1.2.3 (2018.09.29)[/B]
 - Possible solution for settings reset.
 
