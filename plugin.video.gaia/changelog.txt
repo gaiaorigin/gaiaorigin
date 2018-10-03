@@ -1,4 +1,9 @@
 
+[B]3.2.5 (2018.10.03)[/B]
+- Added LambdaScrapers.
+- Fixed Elementum and Quasar buffering.
+- Improved metadata detection.
+
 [B]3.2.4 (2018.09.27)[/B]
 - Fixed exact episode searches.
 - Fixed apostrophe bug in metadata.

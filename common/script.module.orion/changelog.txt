@@ -1,4 +1,9 @@
 
+[B]1.2.5 (2018.10.03)[/B]
+- Added Magicality integration.
+- Added Bodie integration.
+- Added LambdaScrapers integration.
+
 [B]1.2.4 (2018.10.01)[/B]
 - Added automatic settings backup.
 

@@ -1,4 +1,7 @@
 
+[B]3.2.5 (2018.10.03)[/B]
+- Added LambdaScrapers icons.
+
 [B]3.2.0 (2018.09.09)[/B]
 - Removed unused icons.
 
