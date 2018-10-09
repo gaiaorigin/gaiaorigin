@@ -1,4 +1,8 @@
 
+[B]1.2.6 (2018.10.04)[/B]
+- Minor fix for automatic backup.
+- Fixed settings title case.
+
 [B]1.2.5 (2018.10.03)[/B]
 - Added Magicality integration.
 - Added Bodie integration.
