@@ -1,4 +1,7 @@
 
+[B]1.2.7 (2018.10.15)[/B]
+- Another fix for automatic backup.
+
 [B]1.2.6 (2018.10.04)[/B]
 - Minor fix for automatic backup.
 - Fixed settings title case.
