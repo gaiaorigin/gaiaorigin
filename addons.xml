@@ -5,21 +5,13 @@
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
-		<import addon="script.gaia.resources" version="3.2.5" />
-		<import addon="script.gaia.artwork" version="3.0.0" />
-		<import addon="script.gaia.binaries" version="3.0.0" optional="true" />
-		<import addon="script.gaia.icons" version="3.2.5" optional="true" />
-		<import addon="script.gaia.skins" version="3.0.0" optional="true" />
-		<import addon="skin.gaia.aeon.nox" version="2.2.0" optional="true" />
-		<import addon="repository.gaia" version="3.2.1" optional="true" />
-
 		
 	</requires>
 
 	<extension point="xbmc.python.pluginsource" library="gaia.py">
 		<provides>video</provides>
 	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
+	
 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Stream Movies and Shows</summary>
@@ -27,22 +19,7 @@
 		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
 		<platform>all</platform>
 		<license>GPL 3.0</license>
-		<website>https://gaiakodi.com</website>
-		<forum>https://gaiakodi.com/?support</forum>
-		<assets>
-			<icon>icon.png</icon> <!-- Do not change file name. Required by older Kodi versions. -->
-			<fanart>fanart.jpg</fanart> <!-- Do not change file name. Required by older Kodi versions. -->
-			<screenshot>resources/media/screenshots/screenshot01.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot02.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot03.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot04.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot05.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot06.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot07.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot08.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot09.jpg</screenshot>
-			<screenshot>resources/media/screenshots/screenshot10.jpg</screenshot>
-		</assets>
+		
 	</extension>
 </addon>
 
