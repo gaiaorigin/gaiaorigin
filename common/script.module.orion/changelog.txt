@@ -1,4 +1,8 @@
 
+[B]1.2.8 (2018.10.18)[/B]
+- Upgraded LambdaScrapers integration.
+- Added Exodus Redux support.
+
 [B]1.2.7 (2018.10.15)[/B]
 - Another fix for automatic backup.
 
