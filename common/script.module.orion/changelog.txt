@@ -1,4 +1,15 @@
 
+[B]1.3.2 (2018.12.23)[/B]
+- Added promotions.
+- Changed account settings label.
+- Fixed account reset.
+- Support for Kodi 18.
+
+[B]1.3.1 (2018.11.25)[/B]
+- Updated automatic backup.
+- Added settings cache.
+- Fixed advanced settings toggle.
+
 [B]1.3.0 (2018.11.19)[/B]
 - Added advanced settings.
 - Fixed SSL communication.

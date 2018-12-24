@@ -1,4 +1,15 @@
 
+[B]3.2.6 (2018.11.25)[/B]
+- Enable and disable individual external providers.
+- Added sequential playback for failed streams.
+- Integrated new Premiumize API.
+- Updated Premiumize costs.
+- Fixed popularity color.
+- Improved TorrentAPI searches.
+- Support to add custom links to the stream list.
+- Disabled cache inspection for premium links.
+- Added setting for stricter filename filtering.
+
 [B]3.2.5 (2018.10.03)[/B]
 - Added LambdaScrapers.
 - Fixed Elementum and Quasar buffering.
