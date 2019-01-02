@@ -95,7 +95,7 @@
 </addon>
 
 <!-- ELEMENTUM -->
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.61" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.71" provider-name="elgatito">
 	<requires>
 		<import addon="xbmc.addon" version="16.0.0" />
 		<import addon="xbmc.python" version="2.24.0" />
@@ -108,7 +108,6 @@
 	<extension point="xbmc.python.module" library="resources/site-packages" />
 	<extension point="xbmc.subtitle.module" library="navigation.py" />
 	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>true</reuselanguageinvoker>
 		<summary lang="en">Elementum: Media streaming</summary>
 		<summary lang="hr">Elementum: Medijsko strujanje</summary>
 		 <summary lang="es">Elementum: Transmisión de medios</summary>
@@ -133,8 +132,6 @@
 		</assets>
 	</extension>
 </addon>
-
-<!-- ELEMENTUM REPOSITORY -->
 <addon id="repository.elementum" name="Elementum Repository" version="0.0.43" provider-name="elgatito">
 	<requires></requires>
 	<extension point="xbmc.addon.repository" name="Elementum Repository">
@@ -147,9 +144,7 @@
 		<summary lang="en">GitHub repository for Elementum updates</summary>
 	</extension>
 </addon>
-
-<!-- ELEMENTUM BURST -->
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.16" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.34" provider-name="elgatito">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="plugin.video.elementum" optional="true"/>
@@ -174,9 +169,7 @@
 		</assets>
 	</extension>
 </addon>
-
-<!-- ELEMENTUM CONTEXT HELPER -->
-<addon id="context.elementum" name="Elementum Context Helper" version="0.0.1" provider-name="elgatito">
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.2" provider-name="elgatito">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0"/>
 		<import addon="script.module.requests"/>
@@ -187,7 +180,7 @@
 		  <label>My submenu</label>
 		  <item library="context_play.py">
 			<label>32000</label>
-			<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)</visible>
+			<visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
 		  </item>
 	</menu>
 	</extension>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.61" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.71" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -12,7 +12,6 @@
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.subtitle.module" library="navigation.py" />
     <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en">Elementum: Media streaming</summary>
         <summary lang="hr">Elementum: Medijsko strujanje</summary>
          <summary lang="es">Elementum: Transmisión de medios</summary>
