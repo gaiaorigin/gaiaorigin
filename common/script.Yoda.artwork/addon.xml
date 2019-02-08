@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.Yoda.artwork" version="1.1.0" name="[COLORgreen]Yoda Artwork[/COLOR]" provider-name="S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes For Yoda Addon</summary>
+		<description>Artwork Module For Yoda Addon</description>
+        <disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

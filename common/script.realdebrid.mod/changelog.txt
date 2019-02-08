@@ -1,0 +1,18 @@
+v0.4.1 24/03/2018
+- added "Play using RealDebrid" into context menu for videos
+
+v0.4 16/01/2018
+- force reauthorise if real-debrid.com disallows credentials
+- fixed ssl issues which could cause the addon to crash
+- general tidy up and better handling of error messages
+
+v0.31 12/11/2017
+- fixed issue that could cause Kodi to lockup
+
+v0.3 11/11/2017
+- rewrote code to so that other addons can access it
+
+RealDebrid Client v0.2
+- fixed summary in addon.xml
+- fixed playback issue in unrestricted links
+- added ability to download and delete unrestricted and torrent files
