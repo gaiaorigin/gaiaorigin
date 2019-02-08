@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.placenta" name="Placenta Module" version="1.7.5" provider-name="Team Afterbirth">
+<addon id="script.module.placenta" name="Placenta Module" version="1.7.8" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>

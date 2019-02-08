@@ -1,3 +1,58 @@
+27/12/2018 v.1.1.4
+added:
+eztv
+piratebay
+1337x
+
+fix twomovies
+fix seriesonline8
+fix cmovies
+remove moviefisher
+remove putlocker_online
+
+
+11/11/2018 v.1.1.3
+- change movies/tvshows titles on default.py
+- add hosters function
+
+added scrapers:
+cotun (episodes)
+twomovies (movies/episodes)
+
+fixed scrapers:
+releasebb
+twoddl
+oceanof
+streamdreams
+filuit
+putlocker_online
+hdvix
+mvlinks
+
+
+05/11/2018 v.1.1.2
+fix default.py error
+
+added scraper:
+newepisodes
+
+02/11/2018 v.1.1.1
+
+updated main addon with scraper resolve function
+
+added scrapers:
+primewire
+wepisodeseries
+WatchTVseries
+
+
+Removed scrapers:
+movie321
+streamango
+tvmoviestream
+vkflix
+wrzcraft
+
 05/09/2018 v.1.1.0
 client.py edit
 04/09/2018 v.1.0.9.9

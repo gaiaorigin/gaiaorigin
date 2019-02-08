@@ -1,3 +1,164 @@
+[B]Version 5.0.26 (January 02, 2019)[/B]
+- Code Base Changes:
+    - roll back progress dialog window changes
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - none
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.25 (December 29, 2018)[/B]
+- Code Base Changes:
+    - removed jarvis progress dialog skin
+    - settings to allow cached torrents only
+    - fixes for torrents with samples larger than 75 MB
+    - premiumize now uses device authorization same as RD(you must re-auth)
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - realdebrid
+    - premiumize
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - English
+    - English(US)
+
+[B]Version 5.0.24 (December 25, 2018)[/B]
+- Code Base Changes:
+    - none
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - realdebrid
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.23 (December 24, 2018)[/B]
+- Code Base Changes:
+    - none
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - realdebrid
+    - premiumize
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.22 (December 19, 2018)[/B]
+- Code Base Changes:
+    - magnet link support using Real-Debrid (experimental)
+    - add HTTP DELETE method
+    - new Real-Debrid CLIENT ID (you will need to re-authorize)
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - realdebrid
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.21 (December 16, 2018)[/B]
+- Code Base Changes:
+    - torrent and magnet link support using Premiumize (experimental)
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - premiumize
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - English
+    - English(US)
+
+[B]Version 5.0.20 (December 13, 2018)[/B]
+- Code Base Changes:
+    - updated Premiumize to use new API
+    - case-insensitive sorting
+    - increase supported tld length
+- Resolvers Added:
+    - khatriuploads
+    - 24hd
+    - fileholic
+    - movierulz
+- Resolvers Fixed/Updated:
+    - premiumize
+    - thevid
+- Resolvers Removed
+    - flixtor
+- Languages Added/Updated
+    - English
+    - English(US)
+
+[B]Version 5.0.19 (December 05, 2018)[/B]
+- Code Base Changes:
+    - new sorting method
+- Resolvers Added:
+    - fembed
+    - irshare
+- Resolvers Fixed/Updated:
+    - premiumize
+    - vidtodo
+    - vivosx
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.18 (November 20, 2018)[/B]
+- Code Base Changes:
+    - option to globally disable hosts that use popups
+    - better handling of disabling resolvers that use popups
+    - aadecode
+- Resolvers Added:
+    - vevio
+    - cloudvideo
+    - vkspeed
+    - superitu
+- Resolvers Fixed/Updated:
+    - vidboom
+    - vidcloud
+    - openload
+    - thevid
+    - rapidvideo
+    - streamango
+    - streamable
+- Resolvers Removed
+    - thevideo.me
+    - see https://github.com/jsergio123/script.module.resolveurl/commit/56f202a78d1ede761f6e36cfddced7ae41bebc54
+- Languages Added/Updated
+    - English
+    - English(US)
+
+[B]Version 5.0.17 (October 21, 2018)[/B]
+- Code Base Changes:
+    - jsunpack
+- Resolvers Added:
+    - vkprime
+    - myupload
+    - streamcloud
+    - flix555
+    - xclip
+- Resolvers Fixed/Updated:
+    - rapidvideo.com
+    - tunepk
+    - cda
+    - videozoo
+    - gounlimited
+    - tvlogy
+- Resolvers Removed
+    - None
+- Languages Added/Updated
+    - None
+
 [B]Version 5.0.16 (September 19, 2018)[/B]
 - Code Base Changes:
     - None
