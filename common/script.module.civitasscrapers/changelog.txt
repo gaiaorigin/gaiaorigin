@@ -1,4 +1,7 @@
 CivitasScrapers Module Changelog:
+0.0.5.4
+- Furk updated, Thx Tikipeter
+- Furk fixed, thanks 
 0.0.5.3
 - adjust defaults
 0.0.5.1

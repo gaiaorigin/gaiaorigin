@@ -1228,7 +1228,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 </addon>
 
 <!-- CIVITAS SCRAPERS -->
-<addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" version="0.0.5.3" provider-name="13Clowns">
+<addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" version="0.0.5.4" provider-name="CivitasAdmin">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
