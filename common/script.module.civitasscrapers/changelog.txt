@@ -1,0 +1,25 @@
+CivitasScrapers Module Changelog:
+0.0.5.3
+- adjust defaults
+0.0.5.1
+- icon
+0.0.4
+- clean up
+- confirm correct torrents
+0.0.3
+- new home
+- torrents
+- change defaults
+- add egg scrapers
+0.0.2.3
+- extra space
+0.0.2.2
+- typo LASTONE!!! I hope
+- removed 123movie scrapers due to hotlinking
+0.0.2.1
+- typo
+0.0.2
+- added DDLVALEY
+- added SCENERLS
+0.0.1
+- Initial commit
