@@ -1,4 +1,26 @@
 
+[B]2.0.1 (2019.02.15)[/B]
+- Improved database locking.
+
+[B]2.0.0 (2019.02.08)[/B]
+- Possible fix for settings reset.
+- Custom filters based on app instead of integration.
+- Added BluRay and DVD Remux release types.
+- Fixed audio type.
+- Added audio system.
+- Added stream origin.
+- Extended uploaders list.
+- Extended sources list.
+- Extended hosters list.
+- Minimized the settings database.
+- Fixed account limit labels.
+- Added stream removal requests.
+- Class variable optimisation.
+- Fixed filtering issues.
+- Fixed settings for Kodi 18.
+- Fixed seed and age filters.
+- Fixed automatic backup.
+
 [B]1.3.2 (2018.12.23)[/B]
 - Added promotions.
 - Changed account settings label.
