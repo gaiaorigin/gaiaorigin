@@ -1,6 +1,126 @@
 
+[B]4.0.0 (2019.02.15)[/B]
+- Added special progress and stream windows.
+- Enable and disable individual external providers.
+- Added sequential playback for failed streams.
+- Added support for free Premiumize access.
+- Integrated new Premiumize API.
+- Changed to Premiumize OAuth authentication.
+- Updated Premiumize costs.
+- Fixed metacache problem that caused slow menus.
+- Fixed popularity color.
+- Support to add custom links to the stream list.
+- Disabled cache inspection for premium links.
+- Added setting for stricter filename filtering.
+- Fixed cache inspection timeout.
+- Increased link list limit.
+- Updated uploader name list.
+- Added promotions.
+- Added Kodi 18 spinner.
+- Fixed searching in Kodi 18.
+- Fixed dialog scaling for Kodi 18.
+- Fixed settings for new Kodi.
+- Fixed people search.
+- Added TorrentParadise distributed torrent provider.
+- Added BtBit torrent provider.
+- Added DigBt torrent provider.
+- Added AbNzb usenet provider.
+- Improved TorrentApi searches.
+- Fixed iDope torrent provider.
+- Fixed Zooqle torrent provider.
+- Fixed LimeTorrent torrent provider.
+- Fixed BtScene torrent provider.
+- Fixed Prostylex torrent provider.
+- Fixed YggTorrent torrent provider.
+- Fixed BitLord file size.
+- Fixed NzbFinder usenet provider.
+- Stricter Newzleech usenet provider.
+- Updated Lambda Scrapers.
+- Added Civitas Scrapers.
+- Added Global Scrapers.
+- Added Yoda Scrapers.
+- Improved settings retrieval of external scrapers.
+- Added duplicate and unsupported filter settings.
+- Removed dysfunctional Alluc and PronTv providers.
+- Improved the client request module.
+- Added access status to playback dialog.
+- Added lockup for special paths in the settings.
+- Added file size secondary sorting.
+- Automatically disable providers after verification process.
+- Fixed service navigation menus.
+- Added Remux release type.
+- Separated audio system and codec.
+- Extended the audio codec list.
+- Updated history labels.
+- Added external addon origin.
+- Changed provider attribute.
+- Fixed estimated file size for season packs.
+- Better language detection.
+- Optimized metadata loading.
+- Fixed Orion release type.
+- Added video quality icon support.
+- Better cache handling on duplicate removal.
+- Fixed RealDebrid server time.
+- Added external Requests module.
+- Added local CloudFlare support.
+- Fixed Trakt title translation.
+- Fixed exact search.
+- Complete redesign of core scraping engine.
+- Added file name filters.
+- Support for dynamic filters in the stream list.
+- Added version window splash.
+- Fixed splash screen aspect ratio.
+- Fixed audio filters.
+- Improved settings help system.
+- Added primary and secondary color customization.
+- Cleaned up filter settings.
+- Changed Orion voting.
+- Better audio language detection.
+- Directly scrape episodes from the Trakt progress list.
+- Allow debrid streaming over ResolveUrl and UrlResolver.
+- Fixed a number of preset bugs.
+- Added advanced context menu.
+- Improved automatic library updates.
+- Add individual streams to the local library.
+- Fixed local library bugs.
+- Expanded the information menu.
+- Fixed class variable access.
+- Updated Trakt manager.
+- Fixed IMDb release dates.
+- Improved the movie home release list.
+- Generic stream history implementation.
+- Fixed shortcuts for Kodi 18.
+- Improved launching scraping from library and widgets.
+- Better IMDb watchlist caching.
+- Fixed age and certificate lists.
+- Fixed movies channels.
+- Improved kids release lists.
+- Fixed and improved movie channels.
+- Improved movie collections.
+- Fixed playcount and overlays.
+- Optimized color gradient calculations.
+- Create shortcuts inside the shortcut dialog.
+- Added Orion voting and removing.
+- Fixed local cache downloads and streaming.
+- Hide download dialog for RealDebrid cached files.
+- Improved database locking.
+- Fixed trailer playback.
+- Improved OffCloud cached streams.
+- Fixed RealDebrid supported hosts.
+- Fixed external hoster providers.
+- Fixed Premiumize usage statistics.
+- Premiumize service factors update dynamically.
+- Premiumize service domain alias support.
+- RealDebrid service domain alias support.
+- Better episode selection from season packs.
+- Use manual filters for autoplay.
+- Added support to manually select a file from a pack.
+- Enable external providers by language.
+- Option to force Trakt rating dialog.
+- Code cleanup, bug fixes, and many improvements.
+
 [B]3.2.5 (2018.10.03)[/B]
-- Added LambdaScrapers.
+- Added Lambda Scrapers.
 - Fixed Elementum and Quasar buffering.
 - Improved metadata detection.
 

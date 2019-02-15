@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="plugin.video.gaia" version="3.2.5" name="Gaia" provider-name="Gaia">
+<addon id="plugin.video.gaia" version="4.0.0" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
-		<import addon="script.gaia.resources" version="3.2.5" />
-		<import addon="script.gaia.artwork" version="3.0.0" />
-		<import addon="script.gaia.binaries" version="3.0.0" optional="true" />
-		<import addon="script.gaia.icons" version="3.2.5" optional="true" />
-		<import addon="script.gaia.skins" version="3.0.0" optional="true" />
-		<import addon="skin.gaia.aeon.nox" version="2.2.0" optional="true" />
-		<import addon="repository.gaia" version="3.2.1" optional="true" />
+		<import addon="script.gaia.resources" version="4.0.0" />
+		<import addon="script.gaia.artwork" version="4.0.0" />
+		<import addon="script.gaia.binaries" version="4.0.0" optional="true" />
+		<import addon="script.gaia.icons" version="4.0.0" optional="true" />
+		<import addon="script.gaia.skins" version="4.0.0" optional="true" />
+		<import addon="repository.gaia" version="4.0.0" optional="true" />
 
-		<import addon="script.module.orion" version="1.0.3" />
+		<import addon="script.module.orion" version="2.0.0" />
 		<import addon="script.module.resolveurl" version="5.0.06" />
 		<import addon="script.module.urlresolver" version="3.0.29" />
 		<import addon="script.module.metahandler" version="2.9.0" />
+		<import addon="script.extendedinfo" version="5.6.1" />
 
 		<import addon="script.module.lambdascrapers" version="1.0.0" optional="true" />
+		<import addon="script.module.civitasscrapers" version="0.0.2.4" optional="true" />
+		<import addon="script.module.globalscrapers" version="3.3.3" optional="true" />
 		<import addon="script.module.universalscrapers" version="1.0.0" optional="true" />
 		<import addon="script.module.nanscrapers" version="0.5.45" optional="true" />
 		<import addon="script.module.incursion" version="0.1.0" optional="true" />
 		<import addon="script.module.placenta" version="1.2.0" optional="true" />
+		<import addon="script.module.Yoda" version="1.00.045" optional="true" />
 		<import addon="plugin.video.elementum" version="0.0.43" optional="true" />
 		<import addon="plugin.video.quasar" version="0.9.78" optional="true" />
+		<import addon="plugin.video.youtube" version="6.0.0" optional="true" />
 		<import addon="script.trakt" version="3.1.11" optional="true" />
 	</requires>
 
@@ -58,7 +62,7 @@
 	</extension>
 </addon>
 
-<addon id="script.gaia.binaries" version="3.0.0" name="Gaia Binaries" provider-name="Gaia">
+<addon id="script.gaia.binaries" version="4.0.0" name="Gaia Binaries" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -74,7 +78,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.gaia.aeon.nox" version="2.2.0" name="Gaia Aeon Nox" provider-name="Gaia">
+<addon id="skin.gaia.aeon.nox" version="4.0.0" name="Gaia Aeon Nox" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.grab.fanart" version="0.12.8"/>
@@ -84,8 +88,8 @@
 		<import addon="resource.images.recordlabels.white" version="0.0.1"/>
 		<import addon="script.skin.info.service" version="1.0.1"/>
 
-		<import addon="plugin.video.gaia" version="3.2.6" optional="true" />
-		<import addon="repository.gaia" version="3.2.1" optional="true" />
+		<import addon="plugin.video.gaia" version="4.0.0" optional="true" />
+		<import addon="repository.gaia" version="4.0.0" optional="true" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080" />
@@ -115,7 +119,7 @@
 	</extension>
 </addon>
 
-<addon id="script.gaia.skins" version="3.0.0" name="Gaia Skins" provider-name="Gaia">
+<addon id="script.gaia.skins" version="4.0.0" name="Gaia Skins" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -131,7 +135,7 @@
 	</extension>
 </addon>
 
-<addon id="script.gaia.icons" version="3.2.5" name="Gaia Icons" provider-name="Gaia">
+<addon id="script.gaia.icons" version="4.0.0" name="Gaia Icons" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -147,7 +151,7 @@
 	</extension>
 </addon>
 
-<addon id="script.gaia.artwork" version="3.0.0" name="Gaia Artwork" provider-name="Gaia">
+<addon id="script.gaia.artwork" version="4.0.0" name="Gaia Artwork" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -163,19 +167,19 @@
 	</extension>
 </addon>
 
-<addon id="repository.gaia" version="3.2.1" name="Gaia Repository" provider-name="Gaia">
+<addon id="repository.gaia" version="4.0.0" name="Gaia Repository" provider-name="Gaia">
 	<extension point="xbmc.addon.repository" name="Gaia Repository">
 		<dir>
-			<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml?v=3.2.1</info>
-			<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml.md5?v=3.2.1</checksum>
+			<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml?v=4.0.0</info>
+			<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml.md5?v=4.0.0</checksum>
 			<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/</datadir>
 		</dir>
-		<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml?v=3.2.1</info>
-		<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml.md5?v=3.2.1</checksum>
+		<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml?v=4.0.0</info>
+		<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml.md5?v=4.0.0</checksum>
 		<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Gaia Primary Repository</summary>
+		<summary lang="en">Gaia Main Repository</summary>
 		<description lang="en">The Gaia repository for the addon, resources, extensions, and external addons. Any of the Gaia mirror repositories can be used for installation and updates.</description>
 		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
 		<platform>all</platform>
@@ -185,7 +189,7 @@
 	</extension>
 </addon>
 
-<addon id="script.gaia.resources" version="3.2.5" name="Gaia Resources" provider-name="Gaia">
+<addon id="script.gaia.resources" version="4.0.0" name="Gaia Resources" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
