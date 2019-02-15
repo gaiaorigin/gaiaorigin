@@ -1,4 +1,7 @@
 
+[B]4.0.0 (2019.02.15)[/B]
+- Fixed Gaia shortcuts for new version.
+
 [B]2.2.0 (2018.09.16)[/B]
 - Changed repository addon.
 
