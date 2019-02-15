@@ -1,4 +1,12 @@
 
+[B]4.0.0 (2019.02.15)[/B]
+- Added promotions icon.
+- Added GlobalScrapers icons.
+- Added Yoda icons.
+- Changed splash structure.
+- Added new interface images.
+- Added flag icons.
+
 [B]3.2.5 (2018.10.03)[/B]
 - Added LambdaScrapers icons.
 
