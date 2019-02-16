@@ -1,4 +1,14 @@
 
+[B]4.0.1 (2019.02.16)[/B]
+- Fixed the provider labels in the scrape window.
+- Added notification for system clean.
+- Hide special window on Elementum and Quasar playback.
+- Fixed Gaia API access.
+- Fixed Trakt custom lists.
+- Fixed CloudFlare cookies.
+- Fixed TorrentLeech provider.
+- Better support detection for debrid hosters.
+
 [B]4.0.0 (2019.02.15)[/B]
 - Added special progress and stream windows.
 - Enable and disable individual external providers.
