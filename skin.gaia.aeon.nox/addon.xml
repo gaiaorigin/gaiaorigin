@@ -9,7 +9,7 @@
 		<import addon="resource.images.recordlabels.white" version="0.0.1"/>
 		<import addon="script.skin.info.service" version="1.0.1"/>
 
-		<import addon="plugin.video.gaia" version="4.0.2" optional="true" />
+		<import addon="plugin.video.gaia" version="4.0.3" optional="true" />
 		<import addon="repository.gaia" version="4.0.0" optional="true" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">

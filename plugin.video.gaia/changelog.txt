@@ -1,4 +1,7 @@
 
+[B]4.0.3 (2019.02.16)[/B]
+- Fixed IMDb account.
+
 [B]4.0.2 (2019.02.16)[/B]
 - Fixed marks as watched and unwatched.
 
