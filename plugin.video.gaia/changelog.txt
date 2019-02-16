@@ -1,4 +1,9 @@
 
+[B]4.0.5 (2019.02.16)[/B]
+- Fixed show search.
+- Fixed Orion actions in context menu.
+- Fixed download posters in context menu.
+
 [B]4.0.4 (2019.02.16)[/B]
 - Fixed kids section.
 - Extended language section.
