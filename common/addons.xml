@@ -133,7 +133,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.71.linux" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum Linux" version="0.0.71.linux" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
