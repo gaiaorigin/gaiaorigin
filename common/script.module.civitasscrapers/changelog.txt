@@ -1,4 +1,13 @@
 CivitasScrapers Module Changelog:
+0.0.5.8
+- piratebay fixed
+0.0.5.7
+- added foreign scrapers
+0.0.5.6
+- fixed torrents
+0.0.5.5
+- fix/update azmovies, ddlvalley,downflix,odb,tvbox,ymovies
+- torrents added, eztv,zoogle
 0.0.5.4
 - Furk updated, Thx Tikipeter
 - Furk fixed, thanks 
