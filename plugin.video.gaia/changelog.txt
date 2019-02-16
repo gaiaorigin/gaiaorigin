@@ -1,4 +1,9 @@
 
+[B]4.0.4 (2019.02.16)[/B]
+- Fixed kids section.
+- Extended language section.
+- Fixed premium links.
+
 [B]4.0.3 (2019.02.16)[/B]
 - Fixed IMDb account.
 
