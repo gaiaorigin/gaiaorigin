@@ -1,4 +1,7 @@
 
+[B]4.0.2 (2019.02.16)[/B]
+- Fixed marks as watched and unwatched.
+
 [B]4.0.1 (2019.02.16)[/B]
 - Fixed the provider labels in the scrape window.
 - Added notification for system clean.
