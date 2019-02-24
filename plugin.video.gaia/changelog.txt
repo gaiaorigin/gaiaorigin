@@ -1,4 +1,14 @@
 
+[B]4.0.6 (2019.02.24)[/B]
+- Increased scrape window line width.
+- Fixed streams window label bug.
+- Added urllib3 for cfscrape.
+- Fixed YggTorrent account verification.
+- Fixed show searches and retrieval.
+- Fixed exact search.
+- Added debrid cloud download context menu option.
+- Reduced debrid cache inspection chunk size.
+
 [B]4.0.5 (2019.02.16)[/B]
 - Fixed show search.
 - Fixed Orion actions in context menu.

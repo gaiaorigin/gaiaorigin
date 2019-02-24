@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gaia" version="4.0.5" name="Gaia" provider-name="Gaia">
+<addon id="plugin.video.gaia" version="4.0.6" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
-		<import addon="script.gaia.resources" version="4.0.0" />
+		<import addon="script.gaia.resources" version="4.0.6" />
 		<import addon="script.gaia.artwork" version="4.0.0" />
 		<import addon="script.gaia.binaries" version="4.0.0" optional="true" />
 		<import addon="script.gaia.icons" version="4.0.0" optional="true" />
