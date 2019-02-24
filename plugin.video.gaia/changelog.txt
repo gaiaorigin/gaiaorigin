@@ -1,4 +1,9 @@
 
+[B]4.0.7 (2019.02.24)[/B]
+- Added chardet and idna for cfscrape.
+- Deleted old copy of requests.
+- Fixed initializing special window.
+
 [B]4.0.6 (2019.02.24)[/B]
 - Increased scrape window line width.
 - Fixed streams window label bug.
