@@ -1,0 +1,32 @@
+ver 1.1.0
+    - fixed a few scrapers
+	- added 1 new scrapers
+	- Taken out channels and added documentaries
+	- added Networks 
+
+ver 1.1.0
+    - fixed 3 scrapers
+	- added 2 new scrapers
+
+ver 1.0.9
+    - fixed 2 scrapers
+	- added 2 new scrapers
+
+ver 1.0.7
+    - fixed primewire
+	- fixed tvrelease
+	- added 1movie 
+
+ver 1.0.6
+    - fixed watchfree
+	- fixed directdl
+
+ver 1.0.5
+    - added seriesonline
+	- fixed watchseries
+
+ver 1.0.4
+	- Networks Fixed
+	- New Scraper Added
+	- New Icon Pics
+	- Updated To Work With Resolveurl

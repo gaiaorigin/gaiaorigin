@@ -1,0 +1,9 @@
+ver 1.0.5
+    - added seriesonline
+	- fixed watchseries
+
+ver 1.0.4
+	- Networks Fixed
+	- New Scraper Added
+	- New Icon Pics
+	- Updated To Work With Resolveurl
