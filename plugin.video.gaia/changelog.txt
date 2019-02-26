@@ -1,4 +1,9 @@
 
+[B]4.0.8 (2019.02.26)[/B]
+- Better season and episode numbering.
+- Support for cached RealDebrid season packs.
+- Updated Yoda external addon.
+
 [B]4.0.7 (2019.02.24)[/B]
 - Added chardet and idna for cfscrape.
 - Deleted old copy of requests.
