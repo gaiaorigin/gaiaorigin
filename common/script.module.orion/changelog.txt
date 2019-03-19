@@ -1,4 +1,30 @@
 
+[B]2.1.5 (2019.03.19)[/B]
+- Fixed settings help labels for Kodi 17 again.
+
+[B]2.1.4 (2019.03.19)[/B]
+- Fixed settings help labels for Kodi 17.
+
+[B]2.1.3 (2019.03.19)[/B]
+- Fixed external filter settings integration.
+
+[B]2.1.2 (2019.03.19)[/B]
+- Fixed Kodi 18 settings adaptation.
+
+[B]2.1.1 (2019.03.19)[/B]
+- Fixed directory list.
+- Added OpenScrapers integration.
+- Kodi 18 settings support.
+
+[B]2.1.0 (2019.03.15)[/B]
+- Added Boom Movies integration.
+- Added Seren integration.
+- Fixed Yoda integration.
+- Fixed LambdaScrapers integration.
+- Changed to color icons for apps.
+- Updated integration settings.
+- Added torrent support for addon integration.
+
 [B]2.0.1 (2019.02.15)[/B]
 - Improved database locking.
 
