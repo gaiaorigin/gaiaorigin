@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.gaia" version="4.0.9" name="Gaia" provider-name="Gaia">
+<addon id="plugin.video.gaia" version="4.1.0" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
-		<import addon="script.gaia.resources" version="4.0.6" />
+		<import addon="script.gaia.resources" version="4.1.0" />
 		<import addon="script.gaia.artwork" version="4.0.0" />
 		<import addon="script.gaia.binaries" version="4.0.0" optional="true" />
-		<import addon="script.gaia.icons" version="4.0.0" optional="true" />
+		<import addon="script.gaia.icons" version="4.1.0" optional="true" />
 		<import addon="script.gaia.skins" version="4.0.0" optional="true" />
 		<import addon="repository.gaia" version="4.0.0" optional="true" />
 
@@ -16,6 +16,7 @@
 		<import addon="script.module.metahandler" version="2.9.0" />
 		<import addon="script.extendedinfo" version="5.6.1" />
 
+		<import addon="script.module.openscrapers" version="0.0.0.4" optional="true" />
 		<import addon="script.module.lambdascrapers" version="1.0.0" optional="true" />
 		<import addon="script.module.civitasscrapers" version="0.0.2.4" optional="true" />
 		<import addon="script.module.globalscrapers" version="3.3.3" optional="true" />

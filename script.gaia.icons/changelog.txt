@@ -1,4 +1,7 @@
 
+[B]4.1.0 (2019.03.23)[/B]
+- Added OpenScrapers icons.
+
 [B]4.0.0 (2019.02.15)[/B]
 - Added promotions icon.
 - Added GlobalScrapers icons.
