@@ -2,7 +2,7 @@
 <addons>
 
 <!-- URLRESOLVER -->
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.31" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.37" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -17,15 +17,16 @@
 		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
 		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
 		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
 		<forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
+		<website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 
 <!-- RESOLVEURL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.26" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.33" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -40,6 +41,7 @@
 		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
 		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
 		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
 	</extension>
@@ -96,153 +98,153 @@
 </addon>
 
 <!-- ELEMENTUM -->
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.71.android" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.elementum" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum: Media streaming</summary>
-        <summary lang="hr">Elementum: Medijsko strujanje</summary>
-         <summary lang="es">Elementum: Transmisión de medios</summary>
-        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-        <description lang="es">Elementum es un motor de búsqueda y transmisión de torrents. No navega por sitios web de torrents por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
-        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>android</platform>
-        <website>http://elementum.surge.sh/</website>
-        <source>https://github.com/elgatito/plugin.video.elementum</source>
-        <forum></forum>
-        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-            <screenshot>resources/screenshots/home.png</screenshot>
-            <screenshot>resources/screenshots/movies.png</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.35.android" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		 <summary lang="es">Elementum: Transmisión de medios</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>android</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/screenshots/home.png</screenshot>
+			<screenshot>resources/screenshots/movies.png</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
 </addon>
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.71.linux" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.elementum" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum: Media streaming</summary>
-        <summary lang="hr">Elementum: Medijsko strujanje</summary>
-         <summary lang="es">Elementum: Transmisión de medios</summary>
-        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-        <description lang="es">Elementum es un motor de búsqueda y transmisión de torrents. No navega por sitios web de torrents por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
-        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>linux</platform>
-        <website>http://elementum.surge.sh/</website>
-        <source>https://github.com/elgatito/plugin.video.elementum</source>
-        <forum></forum>
-        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-            <screenshot>resources/screenshots/home.png</screenshot>
-            <screenshot>resources/screenshots/movies.png</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.35.linux" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		 <summary lang="es">Elementum: Transmisión de medios</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>linux</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/screenshots/home.png</screenshot>
+			<screenshot>resources/screenshots/movies.png</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
 </addon>
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.71.mac" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.elementum" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum: Media streaming</summary>
-        <summary lang="hr">Elementum: Medijsko strujanje</summary>
-         <summary lang="es">Elementum: Transmisión de medios</summary>
-        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-        <description lang="es">Elementum es un motor de búsqueda y transmisión de torrents. No navega por sitios web de torrents por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
-        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>osx osx64 osx32 ios</platform>
-        <website>http://elementum.surge.sh/</website>
-        <source>https://github.com/elgatito/plugin.video.elementum</source>
-        <forum></forum>
-        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-            <screenshot>resources/screenshots/home.png</screenshot>
-            <screenshot>resources/screenshots/movies.png</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.35.mac" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		 <summary lang="es">Elementum: Transmisión de medios</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>osx osx64 osx32 ios</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/screenshots/home.png</screenshot>
+			<screenshot>resources/screenshots/movies.png</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
 </addon>
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.71.windows" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.elementum" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum: Media streaming</summary>
-        <summary lang="hr">Elementum: Medijsko strujanje</summary>
-         <summary lang="es">Elementum: Transmisión de medios</summary>
-        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-        <description lang="es">Elementum es un motor de búsqueda y transmisión de torrents. No navega por sitios web de torrents por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
-        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>windx</platform>
-        <website>http://elementum.surge.sh/</website>
-        <source>https://github.com/elgatito/plugin.video.elementum</source>
-        <forum></forum>
-        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-            <screenshot>resources/screenshots/home.png</screenshot>
-            <screenshot>resources/screenshots/movies.png</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.35.windows" provider-name="elgatito">
+	<requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="repository.elementum" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="navigation.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/site-packages" />
+	<extension point="xbmc.subtitle.module" library="navigation.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elementum: Media streaming</summary>
+		<summary lang="hr">Elementum: Medijsko strujanje</summary>
+		 <summary lang="es">Elementum: Transmisión de medios</summary>
+		<description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+		<description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+		<description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+		<disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+		<disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+		<language>en el es de fi fr he hr it nl pt ro sk</language>
+		<platform>windx</platform>
+		<website>http://elementum.surge.sh/</website>
+		<source>https://github.com/elgatito/plugin.video.elementum</source>
+		<forum></forum>
+		<license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/screenshots/home.png</screenshot>
+			<screenshot>resources/screenshots/movies.png</screenshot>
+			<screenshot>resources/screenshots/webui.png</screenshot>
+		</assets>
+	</extension>
 </addon>
 <addon id="repository.elementum" name="Elementum Repository" version="0.0.43" provider-name="elgatito">
 	<requires></requires>
@@ -256,7 +258,7 @@
 		<summary lang="en">GitHub repository for Elementum updates</summary>
 	</extension>
 </addon>
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.34" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.36" provider-name="elgatito">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="plugin.video.elementum" optional="true"/>
@@ -730,18 +732,16 @@
 </addon>
 
 <!-- TRAKT -->
-<addon id="script.trakt" name="Trakt" version="3.2.1" provider-name="Trakt.tv, Razzeee">
+<addon id="script.trakt" name="Trakt" version="3.2.4" provider-name="Trakt.tv, Razzeee">
 	<requires>
-        <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.trakt" version="2.12.0"/>
         <import addon="script.module.dateutil" version="2.4.2"/>
-        <import addon="script.module.addon.signals" version="0.0.1"/>
 	</requires>
 	<extension point="xbmc.python.script" library="defaultscript.py">
 		<provides>executable</provides>
 	</extension>
-	<extension point="xbmc.service" name="trakt.service" library="default.py" start="login" />
+	<extension point="xbmc.service" name="trakt.service" library="default.py" />
 	<extension point="xbmc.addon.metadata" name="trakt.metadata">
 		<summary lang="da_DK">TV og film program for Trakt.tv</summary>
 		<summary lang="de_DE">TV und Film Scrobbler für Trakt.tv</summary>
@@ -788,11 +788,11 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=220547</forum>
-		<website>http://trakt.tv</website>
+		<forum>https://forum.kodi.tv/showthread.php?tid=220547</forum>
+		<website>https://trakt.tv</website>
 		<email></email>
 		<source>https://github.com/trakt/script.trakt</source>
-		<news>  - Use correct hook into kodi 18</news>
+		<news>  - Improve id matching for non-tvdb ids</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
@@ -1143,15 +1143,16 @@
 </addon>
 
 <!-- OPENSCRAPERS -->
-<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.0.4" provider-name="Addons4Kodi">
+<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.81" provider-name="Addons4Kodi">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.js2py"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.python.pluginsource" library="lib/default.py">
 		<provides>executable</provides>
-	</extension>
+	</extension> 
 		<extension point="xbmc.addon.metadata">
 			<platform>all</platform>
 			<summary lang="en">OpenScrapers Module</summary>
@@ -1492,6 +1493,87 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<fanart></fanart>
 	</assets>
 	<news></news>
+	</extension>
+</addon>
+
+<!-- JS2PY -->
+<addon id="script.module.js2py" name="js2py" version="0.6.3" provider-name="Addons4Kodi">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.six" version="1.11.0"/>
+		<import addon="script.module.pyjsparser" version="2.7.1"/>
+		<import addon="script.module.tzlocal" version="1.5.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Pure Python JavaScript Translator/Interpreter</summary>
+		<description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+		<platform>all</platform>
+		<language></language>
+		<license>MIT</license>
+		<forum></forum>
+		<website>https://github.com/PiotrDabkowski/Js2Py</website>
+		<source>https://github.com/PiotrDabkowski/Js2Py</source>
+		<email></email>
+	</extension>
+</addon>
+
+<!-- PYJSPARSER -->
+<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.1" provider-name="Addons4Kodi">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Pure Python JavaScript Translator/Interpreter</summary>
+		<description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+		<platform>all</platform>
+		<language></language>
+		<license>MIT</license>
+		<forum></forum>
+		<website>https://github.com/PiotrDabkowski/pyjsparser</website>
+		<source>https://github.com/PiotrDabkowski/pyjsparser</source>
+		<email></email>
+	</extension>
+</addon>
+
+<!-- TZLOCAL -->
+<addon id="script.module.tzlocal" name="tzlocal" version="1.5.1" provider-name="Addons4Kodi">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.pytz" version="2014.2"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Python Module to find out the current time zone</summary>
+		<description>Packed for Kodi from https://github.com/regebro/tzlocal</description>
+		<platform>all</platform>
+		<language></language>
+		<license>MIT</license>
+		<forum></forum>
+		<website>https://github.com/regebro/tzlocal</website>
+		<source>https://github.com/regebro/tzlocal</source>
+		<email></email>
+	</extension>
+</addon>
+
+<!-- PYTZ -->
+<addon id="script.module.pytz" name="pytz" version="2014.2" provider-name="Stuart Bishop, Paul Backhouse">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en">World Timezone Definitions for Python.</summary>
+	    <description lang="en">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
+	    <platform>all</platform>
+	    <language></language>
+	    <license>MIT</license>
+	    <forum></forum>
+	    <website>https://pypi.python.org/pypi/pytz/</website>
+	    <source>https://github.com/powlo/script.module.pytz</source>
+	    <email></email>
+	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
 	</extension>
 </addon>
 

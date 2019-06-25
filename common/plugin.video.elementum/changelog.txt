@@ -2,6 +2,108 @@
 
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
 
+[B][COLOR red]0.1.33-35[/COLOR][/B]
+    - Fixed Linux ARM platforms.
+    - Removed usage of Kodi 'resume playback' parameter as it is often wrong.
+
+[B][COLOR red]0.1.32[/COLOR][/B]
+    - [B][COLOR red]This release is removed due to broken work on Linux ARM platforms![/COLOR][/B]
+    - Updated libtorrent-go docker images to use Musl+GCC9 for Linux images. Should run on any Linux OS now.
+    - Modified automatic next episode starter, to avoid re-writing current episode.
+    - Fixed issue with internal DNS client and failed requests because of v6 IPs.
+    - Small changes to prioritization function to avoid useless calls to libtorrent.
+    - Changed default MaxConnections for libtorrent, from 200 to 80 for multicore devices, 50 to 40 for singlecore devices.
+    - Added handling of multiple BluRay directories in the torrent.
+    - Made search queries to become on top when selected from history list. 
+    - Added selection of files, when added from web. 
+    - Added button to web, to add torrent with downloading all files.
+    - Modified season/episode titles, used for subtitles searchers.
+    - Fixed issue when buffer dialog shows 0% progress.
+    - Added option to avoid adding subtitles files when video has included subtitles. Same option for automatic subtitles download.
+    - Added support for adding not only .srt subtitles. Full list: https://aboutdevice.com/kodi-load-external-subtitle-file/    
+
+[B][COLOR red]0.1.31[/COLOR][/B]
+    - Fixed File storage pieces management.
+    - Fixed Antizapret proxy.
+
+[B][COLOR red]0.1.30[/COLOR][/B]
+    - Fixed issue with file not fully downloaded (using file storage).
+    - Added movie/show title to /play links.
+    - Fixed removal of files, upon torrent deletion in torrents list' context menu.
+    - Fixed re-modification of torrent files upon torrent metadata received.
+    - Added feature to read added file, if it has magnet link inside.
+    - Fixed Croatian translation. Many thanks to @adiadi2.
+    - Another approach to make platform detection safer on closed platforms.
+
+[B][COLOR red]0.1.29[/COLOR][/B]
+    - Fixed issue with priorities setter for file storage.
+    - More subtitles reorganizations.
+
+[B][COLOR red]0.1.28[/COLOR][/B]
+    - Added option to skip IPv6 addresses with built-in DNS resolver.
+    - Small fixes for subtitles selector in existing torrents.
+    - Fixed payload for opensubtitles.
+    - Added Torrents history section. 
+    - Refactored resume playback.
+
+[B][COLOR red]0.1.27[/COLOR][/B]
+    - More changes to piece pick strategy. Removed deadlines functionality.
+
+[B][COLOR red]0.1.26[/COLOR][/B]
+    - Added storing resume progress for downloaded files.
+    - Added "Download all" option to context menu in torrents list.
+    - Make "Yes" as predefined in confirm dialogs.
+    - Trying to treat piece priorities in a new way.
+
+[B][COLOR red]0.1.25[/COLOR][/B]
+    - Added separate option for defining minimum file size for episodes (to cover small episodes).
+    - More changes to deadlines management. Deadlines are not enabled by default.
+    - Buffer window now not shown if buffer is not needed.
+    - Fixed OSDB usage without login/password (anonymous mode now working).
+    - Modified OSDB to properly search episodes.
+    - Added option for auto-downloading subtitles from OSDB on playback start.
+    - Fixed internal proxy failure on configuration changes.
+    - Added Auto-buffering for next episode in playlist (Start playback from list of episodes by "Play from here ...").
+    - Modified all plugin links to have movie/episode titles in the link.
+    - Fixed proxy settings in libtorrent.
+    - Added Transaltions to search objects, that go to search plugins.
+    - Added Donate link to main menu.
+    - Added deadline reset for hailed-hash pieces.
+
+[B][COLOR red]0.1.24[/COLOR][/B]
+    - Added "Liked" Trakt lists to "My Collections".
+    - Added context menu to Trakt lists, that allow adding them to main menu (Movies/Shows).
+    - Any list can be added to main lists. Context menu on them - to remove from main menu.
+    - More changes to libtorrent settings.
+    - Fixed many memory leaks.
+    - Added options 
+
+[B][COLOR red]0.1.23[/COLOR][/B]
+    - Added "In Kodi library" sections, that show movies/shows added by Elementum in Kodi library.
+    - Added option to resume playback N seconds earlier.
+    - Added option to resume torrents with Paused/Resumed state.
+
+[B][COLOR red]0.1.22[/COLOR][/B]
+    - Small changes to pieces priorities settings.
+    - Fixes for resume playback management.
+
+[B][COLOR red]0.1.21[/COLOR][/B]
+    - Reorganized libtorrent settings.
+    - Added libtorrent profile settings.
+    - Added magnet retracker settings.
+
+[B][COLOR red]v0.1.1-0.1.20[/COLOR][/B]
+    - Testing migration to libtorrent as a torrent library!
+    - If you want to use stable version - revert to 0.0.* version by updating from repository!
+    - Please report any found problems on github or gitter chat.
+    - Added option to auto-adjust buffer size to have at least 10 pieces before starting playback.
+    - Added option to skip auto-adjust buffer according to Kodi's advancedsettings.xml
+    - Added libtorrent.config handling to manually adjust libtorrent settings. See https://libtorrent.org/reference-Settings.html
+    - Added setting to add season+episode number to episode titles.
+    - Reorganized startup to start faster.
+    - Reorganized existing torrents loading to load them in creation order.
+    - Reorganized fastresume+parts files cleanup.
+
 [B][COLOR red]v0.0.71[/COLOR][/B]
     - New memory storage implemented.
     - Added save ability for magnets.

@@ -1,4 +1,49 @@
 OpenScrapers Module Changelog:
+0.0.1.5
+- Added new scrapers (ty Nazegnl)
+- fixed bs4 issue in pubfilmonline
+- code cleanup
+
+0.0.1.4
+- added the missing Host505's scraper changes
+- code reformatting
+
+0.0.1.3
+- added Host505's scraper changes
+- code reformatting
+
+0.0.1.2
+- Module fixes
+- cfscrape update
+- Code reformatting
+- optimized imports
+- scraper updates
+- dead scrapers moved
+
+0.0.1.0
+- Module import line fixes
+
+0.0.0.9
+- Scraper cleanup
+- File cleanup
+- Module cleanup
+- External Scraper tester updates
+- Scraper updates from other addons
+
+0.0.0.8
+- cfscrape updates
+
+0.0.0.7
+- Settings improvements
+- Disabled malfunctioning scrapers
+- Updated cfscrape to latest
+- Scraper updates
+
+0.0.0.5
+- Scraper updates
+- Settings updates
+- Added MagentDL scraper
+
 0.0.0.4
 - Scraper updates
 - Settings updates

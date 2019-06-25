@@ -1,3 +1,96 @@
+[B]Version 5.0.37 (June 23, 2019)[/B]
+- Code Base Changes:
+    - none
+- Resolvers Added:
+    - linksnappy
+    - holavid
+    - onlystream
+- Resolvers Fixed/Updated:
+    - verystream
+    - mp4upload
+    - xstreamcdn
+    - videozupload
+    - videoapne
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - Dutch
+
+[B]Version 5.0.36 (May 18, 2019)[/B]
+- Code Base Changes:
+    - none
+- Resolvers Added:
+    - vidtodo
+    - idtbox
+- Resolvers Fixed/Updated:
+    - tunepk
+    - veoh
+    - alldebrid (torrent support)
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.35 (April 27, 2019)[/B]
+- Code Base Changes:
+    - none
+- Resolvers Added:
+    - verystream
+- Resolvers Fixed/Updated:
+    - vidoza
+    - uptobox
+    - vidlox
+- Resolvers Removed
+    - vidtodo
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.34 (April 21, 2019)[/B]
+- Code Base Changes:
+    - common.py
+- Resolvers Added:
+    - hxload
+- Resolvers Fixed/Updated:
+    - realdebrid
+    - fembed
+    - thevid
+    - vidtodo
+- Resolvers Removed
+    - vidzella
+- Languages Added/Updated
+    - none
+
+[B]Version 5.0.33 (April 07, 2019)[/B]
+- Code Base Changes:
+    - premiumize api change (you must re-auth)
+- Resolvers Added:
+    - lewdhost
+    - videoapne
+    - xstreamcdn
+- Resolvers Fixed/Updated:
+    - dailymotion
+    - premiumize
+    - rapidvideo
+    - vivosx
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - greek
+
+[B]Version 5.0.32 (February 03, 2019)[/B]
+- Code Base Changes:
+    - roll back progress dialog window changes
+    - RESET FUNCTION CACHE IN URLRESOLVER SETTINGS!!!!
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - realdebrid
+    - premiumize
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
 [B]Version 5.0.31 (January 29, 2019)[/B]
 - Code Base Changes:
     - settings to allow cached torrents only

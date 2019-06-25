@@ -1,4 +1,12 @@
 
+[B]2.2.0 (2019.04.13)[/B]
+- Changed access error logging.
+- Fixed OpenScrapers integration.
+- Better torrent retrieval for OpenScrapers.
+- Fixed date formatting.
+- Added subscription expiration notifications.
+- Added networker JSON decoding.
+
 [B]2.1.5 (2019.03.19)[/B]
 - Fixed settings help labels for Kodi 17 again.
 
