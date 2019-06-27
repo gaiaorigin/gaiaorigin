@@ -1,4 +1,10 @@
 
+[B]3.0.2 (2019.06.27)[/B]
+- Added container limit to settings.
+
+[B]3.0.1 (2019.06.27)[/B]
+- Fixed authentication bug.
+
 [B]3.0.0 (2019.06.26)[/B]
 - Updated API access to version 3.
 - Added hash support.
