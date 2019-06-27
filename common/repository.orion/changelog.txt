@@ -1,3 +1,6 @@
 
+[B]3.0.0 (2019.06.26)[/B]
+- Major version upgrade.
+
 [B]1.0.0 (2018.07.22)[/B]
 - Initial release.

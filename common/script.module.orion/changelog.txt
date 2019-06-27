@@ -1,4 +1,15 @@
 
+[B]3.0.0 (2019.06.26)[/B]
+- Updated API access to version 3.
+- Added hash support.
+- Added container support.
+- Fixed NanScrapers.
+- Fixed UniversalScrapers and added torrent support.
+- Added Exodus integration.
+- Added Nymeria integration.
+- Updated documentation and examples.
+- Fixed custom filter stream type.
+
 [B]2.2.0 (2019.04.13)[/B]
 - Changed access error logging.
 - Fixed OpenScrapers integration.

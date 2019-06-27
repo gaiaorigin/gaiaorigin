@@ -1,4 +1,88 @@
 
+[B]5.0.0 (2019.06.27)[/B]
+- Added cinematic experience.
+- Added binge watching.
+- Integrated Emby servers and providers.
+- Improved alternative title handling.
+- Improved trailer system.
+- Fixed trailer art.
+- Improved autoplay playback loop.
+- Updated Yoda and YouTube dependency.
+- Added ExtendedInfo extension endpoint.
+- Fixed descending order in list sorting.
+- Added Trakt progress and calendar sorting.
+- Rewrote the language system.
+- Better language detection.
+- Updated cfscrape.
+- Removed duplicate Trakt show summary function.
+- Consistent metadata duration.
+- Better player metadata.
+- Cleaned up core code.
+- Added empty history notification.
+- Fixed history list autoplay start.
+- Fixed history addition with autoplay.
+- Changed episode title in history list.
+- Improved RealDebrid season pack selection.
+- Added RSS feeds lookups to the Premiumize provider.
+- Changed BiNzb provider link resolving.
+- Changed Movcr provider link resolving.
+- Changed Prostylex provider link resolving.
+- Fixed debrid download dialog loop.
+- Fixed OffCloud usenet status.
+- Fixed movies and shows that do not have a year.
+- Remove torrent streams for external providers.
+- Better FanArt movie retrieval.
+- Improved alternative title retrieval.
+- Added more advanced preemptive termination.
+- Disabled iDope provider by default.
+- Changed OffCloud cache API link.
+- Updated audio codec detection.
+- Fixed timestamp creation for future dates.
+- Improved cache lookups.
+- Fixed progress dialog type.
+- Fixed OffCloud manual file selection.
+- Updated file exclusions for manual file selection.
+- Fixed and improved usenet providers.
+- More intelligent local caching.
+- Faster menu navigation.
+- Improved play count and watched management.
+- Fixed watched status and episode count overlays.
+- Reposition list on changing watched status.
+- Added a rescrape option to the context menu.
+- Fixed maximum debrid cost.
+- Updated CloudFlare redirects.
+- Fixed torrent file hash calculation.
+- Fixed YggTorrent provider.
+- Fixed sequential playback for local downloads.
+- Fixed meta cache for shows  with the same IMDb ID.
+- Fixed Premiumize API cache inspection.
+- Fixed Premiumize API progress message parsing.
+- Improved special season and episode support.
+- Added more metadata edition types.
+- Fixed URL encoding in context menus.
+- Fixed direct show progress setting.
+- Fixed overlay and playcount.
+- Hide metadata for directory navigation.
+- Fixed IMDb list next navigation.
+- Fixed IMDb rating and duration detection.
+- Added IMDb ratings list.
+- Improved Trakt watched marking.
+- IMDb watchlist and ratings export to Trakt.
+- Possible fix for labels when the scraping window is canceled.
+- Fixed Trakt custom list manager.
+- Added NzbIndex usenet provider.
+- Added DogNzb usenet provider.
+- Added NzbHydra usenet provider.
+- Added NzbWolf usenet provider.
+- Added NzbNoob usenet provider.
+- Added AltHub usenet provider.
+- Added NzbFriends usenet provider.
+- Added FindNzb usenet provider.
+- Added NzbServer usenet provider.
+- Improved stream and cloud handling.
+- Changed YTS domain.
+- Fixed debrid sources for external provideres.
+
 [B]4.1.1 (2019.03.24)[/B]
 - Fixed unicode hashes.
 

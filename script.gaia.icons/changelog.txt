@@ -1,4 +1,11 @@
 
+[B]5.0.0 (2019.06.27)[/B]
+- Changed clear play icon.
+- Added OpenScrapers extension icon.
+- Added ExtendedInfo icons.
+- Added Emby icons.
+- Added IMDb icons.
+
 [B]4.1.0 (2019.03.23)[/B]
 - Added OpenScrapers icons.
 
