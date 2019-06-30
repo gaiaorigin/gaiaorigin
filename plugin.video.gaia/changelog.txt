@@ -1,4 +1,7 @@
 
+[B]5.0.1 (2019.06.30)[/B]
+- Possible Windows startup fix.
+
 [B]5.0.0 (2019.06.27)[/B]
 - Added cinematic experience.
 - Added binge watching.
