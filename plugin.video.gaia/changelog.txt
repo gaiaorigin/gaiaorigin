@@ -1,4 +1,7 @@
 
+[B]5.0.2 (2019.07.02)[/B]
+- Possible fix for RealDebrid time API call.
+
 [B]5.0.1 (2019.06.30)[/B]
 - Possible Windows startup fix.
 
