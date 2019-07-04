@@ -1,4 +1,7 @@
 
+[B]5.0.4 (2019.07.04)[/B]
+- Another fix for clearing the old cache.
+
 [B]5.0.3 (2019.07.02)[/B]
 - Fixed the caching system.
 - Fixed next page navigation.
