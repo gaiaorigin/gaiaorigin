@@ -1,4 +1,14 @@
 
+[B]5.0.5 (2019.07.05)[/B]
+- Fixed metadata unicode encoding.
+- Increase IMDb export timeout.
+- Fixed IMDb show watchlist.
+- Fixed language category.
+- Fixed duplicate entries in lists.
+- Fixed audio language filter.
+- Fixed playback from external addons.
+- Added option to set list page limit.
+
 [B]5.0.4 (2019.07.04)[/B]
 - Another fix for clearing the old cache.
 
