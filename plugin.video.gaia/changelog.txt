@@ -1,4 +1,9 @@
 
+[B]5.0.6 (2019.07.07)[/B]
+- Fixed Trakt rating.
+- Updated cfscrape.
+- Fixed Premiumize error variables.
+
 [B]5.0.5 (2019.07.05)[/B]
 - Fixed metadata unicode encoding.
 - Increase IMDb export timeout.
