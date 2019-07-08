@@ -1,4 +1,9 @@
 
+[B]5.0.7 (2019.07.08)[/B]
+- Fixed Trakt manual rating.
+- Fixed Trakt watched marking.
+- Updated cfscrape.
+
 [B]5.0.6 (2019.07.07)[/B]
 - Fixed Trakt rating.
 - Updated cfscrape.
