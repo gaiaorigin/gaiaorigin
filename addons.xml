@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="plugin.video.gaia" version="5.0.7" name="Gaia" provider-name="Gaia">
+<addon id="plugin.video.gaia" version="5.1.0" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 
@@ -31,6 +31,7 @@
 		<import addon="plugin.video.elementum" version="0.0.43" optional="true" />
 		<import addon="plugin.video.quasar" version="0.9.78" optional="true" />
 		<import addon="script.trakt" version="3.1.11" optional="true" />
+		<import addon="script.module.addon.signals" version="0.0.1" optional="true" />
 	</requires>
 
 	<extension point="xbmc.python.pluginsource" library="gaia.py">
@@ -89,7 +90,7 @@
 		<import addon="resource.images.recordlabels.white" version="0.0.1"/>
 		<import addon="script.skin.info.service" version="1.0.1"/>
 
-		<import addon="plugin.video.gaia" version="5.0.7" optional="true" />
+		<import addon="plugin.video.gaia" version="5.1.0" optional="true" />
 		<import addon="repository.gaia" version="5.0.0" optional="true" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">

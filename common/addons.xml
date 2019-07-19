@@ -1617,7 +1617,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 </addon>
 
 <!-- ORION -->
-<addon id="script.module.orion" version="3.0.2" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="3.2.0" name="Orion" provider-name="Orion">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="repository.orion" version="1.0.0" optional="true" />

@@ -1,4 +1,23 @@
 
+[B]3.2.0 (2019.07.19)[/B]
+- Customized API keys for scraping addons.
+- Added separate limits for movies and shows.
+- Changed database management.
+- Added a new interface color.
+- Added integration for Elementum.
+- Added integration for Quasar.
+- Added integration for Genesis.
+- Added integration for Scrubs.
+- Added integration for Fen.
+- Added support for Venom.
+- Added support for Medusa.
+- Added support for Mercury.
+- Added support for TheOath.
+
+[B]3.1.0 (2019.07.11)[/B]
+- Restructured file filters.
+- Added file name filters.
+
 [B]3.0.2 (2019.06.27)[/B]
 - Added container limit to settings.
 

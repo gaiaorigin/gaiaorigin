@@ -1,4 +1,23 @@
 
+[B]5.1.0 (2019.07.19)[/B]
+- Better cache lookups.
+- Fixed corrupted cache data.
+- Fixed filtering system.
+- Fixed autoplay filter restriction.
+- Removed support menu.
+- Added new binge watching features.
+- Reorganized the playback settings.
+- Possible fix for playback loop.
+- Reorganized the color scheme.
+- Faster menu loading speeds.
+- Fixed metadata cache.
+- Improved Orion scraping speeds.
+- Fixed Premiumize time detection.
+- Added more customizations for the the cinema window.
+- Changed episode count and watched check mark.
+- Updated local library integration.
+- Make Gaia work if Orion is uninstalled or disabled.
+
 [B]5.0.7 (2019.07.08)[/B]
 - Fixed Trakt manual rating.
 - Fixed Trakt watched marking.
