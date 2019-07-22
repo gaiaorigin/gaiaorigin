@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.gaia.resources" version="5.0.0" name="Gaia Resources" provider-name="Gaia">
+<addon id="script.gaia.resources" version="5.1.1" name="Gaia Resources" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>

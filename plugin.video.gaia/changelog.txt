@@ -1,4 +1,9 @@
 
+[B]5.1.1 (2019.07.22)[/B]
+- Fixed hash calculation of torrent containers.
+- Removed old version data clearance.
+- Added Orion uninstall option.
+
 [B]5.1.0 (2019.07.19)[/B]
 - Better cache lookups.
 - Fixed corrupted cache data.
