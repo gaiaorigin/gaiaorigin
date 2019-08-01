@@ -1,4 +1,10 @@
 
+[B]3.2.2 (2019.08.01)[/B]
+- Fixed service that stops Orion from launching.
+
+[B]3.2.1 (2019.07.31)[/B]
+- Improved background service.
+
 [B]3.2.0 (2019.07.19)[/B]
 - Customized API keys for scraping addons.
 - Added separate limits for movies and shows.

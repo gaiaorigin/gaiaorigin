@@ -1,4 +1,10 @@
 
+[B]5.1.2 (2019.08.01)[/B]
+- Fixed unicode decoding in titles.
+- Fixed network detection.
+- Added show sorting back to the settings.
+- Fixed exact search.
+
 [B]5.1.1 (2019.07.22)[/B]
 - Fixed hash calculation of torrent containers.
 - Removed old version data clearance.
