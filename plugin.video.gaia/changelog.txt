@@ -1,4 +1,8 @@
 
+[B]5.1.3 (2019.08.01)[/B]
+- Changed season 0 label.
+- Better season pack detection for YggTorrent.
+
 [B]5.1.2 (2019.08.01)[/B]
 - Fixed unicode decoding in titles.
 - Fixed network detection.
