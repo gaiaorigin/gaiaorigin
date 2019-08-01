@@ -1,4 +1,13 @@
 
+[B]3.2.5 (2019.08.01)[/B]
+- Fixed update failures due to running service.
+
+[B]3.2.4 (2019.08.01)[/B]
+- Reverted service code.
+
+[B]3.2.3 (2019.08.01)[/B]
+- Possible fix for update failures.
+
 [B]3.2.2 (2019.08.01)[/B]
 - Fixed service that stops Orion from launching.
 
