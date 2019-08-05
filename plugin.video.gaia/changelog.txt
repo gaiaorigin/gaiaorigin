@@ -1,4 +1,22 @@
 
+[B]5.2.0 (2019.08.05)[/B]
+- Dynamic button sizes for binge window.
+- Improved binge watching process.
+- Faster season pack scraping.
+- Fixed foreign title scraping and encoding.
+- Rewritten providers for unicode titles.
+- Added generic interface for external providers.
+- Improved file name detection for external providers.
+- Improved file size detection for external providers.
+- Fixed Torrent9 provider.
+- Fixed Cpabien provider.
+- Fixed BiNzb file name.
+- Fixed FindNzb file size.
+- Removed Incursion provider.
+- Removed Placenta provider.
+- Removed Yoda provider.
+- Removed VideoScraper provider.
+
 [B]5.1.3 (2019.08.01)[/B]
 - Changed season 0 label.
 - Better season pack detection for YggTorrent.

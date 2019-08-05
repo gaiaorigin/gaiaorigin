@@ -1066,7 +1066,7 @@
 </addon>
 
 <!-- UNIVERSALSCRAPERS -->
-<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.4" provider-name="Team Universal">
+<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.2.0" provider-name="Team Universal">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -1074,7 +1074,7 @@
 		<import addon="script.module.requests"/>
 		<import addon="script.module.six"/>
 		<import addon="repository.universalscrapers"/>
-	<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+		<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib"/>
 	<extension point="xbmc.python.pluginsource" library="lib/default.py">
@@ -1123,7 +1123,7 @@
 </addon>
 
 <!-- LAMBDASCRAPERS -->
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.0" provider-name="I-A-C">
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="2.0.0" provider-name="I-A-C">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
@@ -1132,22 +1132,26 @@
 	<extension point="xbmc.python.pluginsource" library="lib/default.py">
 		<provides>executable</provides>
 	</extension>
-	<extension point="xbmc.service" library="CleanupService.py" start="startup" />
 		<extension point="xbmc.addon.metadata">
 			<platform>all</platform>
 			<summary lang="en">Lambdascrapers Module</summary>
 			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-        		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        		<license>Beerware rev. 42</license>
-		</extension>
+				<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart></fanart>
+	</assets>
+	<news></news>
+	</extension>
 </addon>
 
 <!-- OPENSCRAPERS -->
-<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.81" provider-name="Addons4Kodi">
+<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.93" provider-name="Addons4Kodi">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.beautifulsoup4"/>
-		<import addon="script.module.js2py"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.python.pluginsource" library="lib/default.py">
@@ -1164,7 +1168,7 @@
 		<icon>icon.png</icon>
 		<fanart></fanart>
 	</assets>
-	<news></news>
+	<news>v0.0.1.93 - Scraper cleanup and EOL fixes</news>
 	</extension>
 </addon>
 <addon id="repository.openscrapers" name="OpenScrapers Repository" version="1.0" provider-name="A4K">
@@ -1179,231 +1183,6 @@
 		<summary>OpenScrapers Repository</summary>
 		<description>The official repo for OpenScrapers!.</description>
 		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<!-- INCURSION -->
-<addon id="plugin.video.incursion" version="0.1.15" name="Incursion" provider-name="Incursion">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.incursion" />
-		<import addon="script.incursion.artwork" />
-		<import addon="script.incursion.metadata" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="incursion.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Incursion</summary>
-		<description lang="en">[I]New Resistance[/I][CR][CR][B]Incursion - Media for the Masses[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<news>
-v0.1.15 (FEB-2018)
-Fixed "Trakt - Mark as Watched" Issues
-Added Trakt Bookmarks Function
-Added Auto Resume Option
-Trakt On Deck - Reversed to show last played first.
-		</news>
-	</extension>
-</addon>
-<addon id="script.incursion.artwork" version="1.0.7" name="Incursion Artwork" provider-name="Incursion">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Incursion Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
-</addon>
-<addon id="script.incursion.metadata" version="1.0.3" name="Incursion Metadata" provider-name="Incursion">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Incursion Addon</summary>
-		<description>Metadata for Incursion are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-<addon id="script.module.incursion" name="Incursion Module" version="1.17" provider-name="Incursion">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Incursion</summary>
-	</extension>
-</addon>
-
-<!-- PLACENTA -->
-<addon id="plugin.video.placenta" version="1.4.6" name="Placenta" provider-name="Team Afterbirth">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.placenta" />
-		<import addon="script.placenta.artwork" />
-		<import addon="script.placenta.metadata" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" />
-        <import addon="plugin.video.youtube"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-        <provides>audio</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Placenta</summary>
-		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
-The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
-This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
-</disclaimer>
-		<platform>all</platform>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-		<license>Beerware rev. 42</license>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-<addon id="script.module.placenta" name="Placenta Module" version="1.7.8" provider-name="Team Afterbirth">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">Placenta</summary>
-		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Beerware rev. 42</license>
-	</extension>
-</addon>
-<addon id="script.placenta.artwork" version="1.0.8" name="Placenta Artwork" provider-name="Team Afterbirth">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Placenta Addon</summary>
-		<description>Artwork Module for the Placenta Addon</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
-The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
-This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Beerware rev. 42</license>
-		<platform>all</platform>
-	</extension>
-</addon>
-<addon id="script.placenta.metadata" version="1.0.1" name="Placenta Metadata" provider-name="Team Afterbirth">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Placenta Addon</summary>
-		<description>Metadata for Placenta are maintained separately to make distribution of the the addon itself easier/faster.</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
-The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
-This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Beerware rev. 42</license>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<!-- YODA -->
-<addon id="plugin.video.yoda" version="1.0.0" name="[COLORgreen]yoda[/COLOR]" provider-name="S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.yoda" />
-		<import addon="script.yoda.artwork" version="1.0.0" />
-		<import addon="script.yoda.metadata" version="1.0.0" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="yoda.py">
-		<provides>video</provides>
-        <provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[COLORlime]yoda[/COLOR]</summary>
-		<description>[COLOR aqua]yoda Movies and TV. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels. The author does not host any of the content in this addon and takes no responsibility for content found[/COLOR]</description>
-        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!
-</disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.jpg</icon>
-			<fanart>fanart.png</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.png</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.png</screenshot>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-<addon id="script.module.yoda" name="[COLORgreen]yoda Module[/COLOR]" version="1.0.0" provider-name="S">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">yoda</summary>
-		<description></description>
-        <disclaimer lang="en"></disclaimer>
-	</extension>
-</addon>
-<addon id="script.yoda.metadata" version="1.0.0" name="[COLORgreen]yoda Metadata[/COLOR]" provider-name="S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the yoda Addon</summary>
-		<description>Metadata for yoda are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-<addon id="script.yoda.artwork" version="1.0.0" name="[COLORgreen]yoda Artwork[/COLOR]" provider-name="S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes For yoda Addon</summary>
-		<description>Artwork Module For yoda Addon</description>
-        <disclaimer lang="en"></disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1496,87 +1275,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<!-- JS2PY -->
-<addon id="script.module.js2py" name="js2py" version="0.6.3" provider-name="Addons4Kodi">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.six" version="1.11.0"/>
-		<import addon="script.module.pyjsparser" version="2.7.1"/>
-		<import addon="script.module.tzlocal" version="1.5.1"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Pure Python JavaScript Translator/Interpreter</summary>
-		<description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
-		<platform>all</platform>
-		<language></language>
-		<license>MIT</license>
-		<forum></forum>
-		<website>https://github.com/PiotrDabkowski/Js2Py</website>
-		<source>https://github.com/PiotrDabkowski/Js2Py</source>
-		<email></email>
-	</extension>
-</addon>
-
-<!-- PYJSPARSER -->
-<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.1" provider-name="Addons4Kodi">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Pure Python JavaScript Translator/Interpreter</summary>
-		<description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
-		<platform>all</platform>
-		<language></language>
-		<license>MIT</license>
-		<forum></forum>
-		<website>https://github.com/PiotrDabkowski/pyjsparser</website>
-		<source>https://github.com/PiotrDabkowski/pyjsparser</source>
-		<email></email>
-	</extension>
-</addon>
-
-<!-- TZLOCAL -->
-<addon id="script.module.tzlocal" name="tzlocal" version="1.5.1" provider-name="Addons4Kodi">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.pytz" version="2014.2"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Python Module to find out the current time zone</summary>
-		<description>Packed for Kodi from https://github.com/regebro/tzlocal</description>
-		<platform>all</platform>
-		<language></language>
-		<license>MIT</license>
-		<forum></forum>
-		<website>https://github.com/regebro/tzlocal</website>
-		<source>https://github.com/regebro/tzlocal</source>
-		<email></email>
-	</extension>
-</addon>
-
-<!-- PYTZ -->
-<addon id="script.module.pytz" name="pytz" version="2014.2" provider-name="Stuart Bishop, Paul Backhouse">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.addon.metadata">
-	    <summary lang="en">World Timezone Definitions for Python.</summary>
-	    <description lang="en">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
-	    <platform>all</platform>
-	    <language></language>
-	    <license>MIT</license>
-	    <forum></forum>
-	    <website>https://pypi.python.org/pypi/pytz/</website>
-	    <source>https://github.com/powlo/script.module.pytz</source>
-	    <email></email>
-	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
-	</extension>
-</addon>
-
 <!-- EXTENDED INFO -->
 <addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.1" provider-name="phil65 (Philipp Temminghoff)">
 	<requires>
@@ -1617,7 +1315,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 </addon>
 
 <!-- ORION -->
-<addon id="script.module.orion" version="3.2.5" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="3.2.6" name="Orion" provider-name="Orion">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="repository.orion" version="1.0.0" optional="true" />

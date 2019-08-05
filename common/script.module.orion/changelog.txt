@@ -1,4 +1,7 @@
 
+[B]3.2.6 (2019.08.02)[/B]
+- Fixed UniversalScrapers integration.
+
 [B]3.2.5 (2019.08.01)[/B]
 - Fixed update failures due to running service.
 

@@ -1,3 +1,54 @@
+16/07/2019 v1.2.0
+Fixed: 
+Quality issue pirateiro
+
+
+15/07/2019 v1.1.9
+Added:
+one337x
+pirateiro
+primewire
+Fixed:
+eztv
+piratebay
+Removed:
+kickass
+Thanks to a mystery fixer and the testers.
+
+2/07/2019 v.1.1.8
+someone made a boo boo LOL
+
+1/7/2019 v1.1.7
+Added:
+zooqle
+kickass2
+updated cfscrape
+removed to be looked at loads!
+Thanks to Jewbmx for helping out.
+
+15/04/2019 v1.1.6
+fixed scrapers:
+piratebay
+twoddl
+changed cfscrape.py
+
+28/03/2109 v1.1.5.a
+cf scrape update 
+
+
+28/02/2019 v.1.1.5
+fixed scrapers:
+releasebb
+1337x
+fluit
+change to client.py
+
+
+28/12/2018 v.1.1.4.a
+bug fix on piratebay
+
+fix releasebb
+
 27/12/2018 v.1.1.4
 added:
 eztv

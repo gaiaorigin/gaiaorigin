@@ -1,4 +1,7 @@
 
+[B]5.2.0 (2019.08.05)[/B]
+- Reduced window label width.
+
 [B]5.1.1 (2019.07.22)[/B]
 - Added Orion uninstall icon.
 
