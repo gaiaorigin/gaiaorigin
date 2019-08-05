@@ -1,4 +1,7 @@
 
+[B]5.2.2 (2019.08.05)[/B]
+- Fixed launch error.
+
 [B]5.2.1 (2019.08.05)[/B]
 - Fixed metadata file name filtering.
 - Fixed BitLord provider.
