@@ -1,4 +1,8 @@
 
+[B]5.2.1 (2019.08.05)[/B]
+- Fixed metadata file name filtering.
+- Fixed BitLord provider.
+
 [B]5.2.0 (2019.08.05)[/B]
 - Dynamic button sizes for binge window.
 - Improved binge watching process.
