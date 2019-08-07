@@ -1,4 +1,8 @@
 
+[B]5.2.3 (2019.08.07)[/B]
+- Fixed NewzNab providers.
+- Fixed metadata encoding issues.
+
 [B]5.2.2 (2019.08.05)[/B]
 - Fixed launch error.
 
