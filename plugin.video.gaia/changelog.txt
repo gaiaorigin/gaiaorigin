@@ -1,4 +1,9 @@
 
+[B]5.2.4 (2019.08.10)[/B]
+- Fixed title abbreviation search.
+- Fixed TVMaze lookups.
+- Fixed episode detection with file names.
+
 [B]5.2.3 (2019.08.07)[/B]
 - Fixed NewzNab providers.
 - Fixed metadata encoding issues.
