@@ -1,4 +1,14 @@
 
+[B]3.3.0 (2019.08.12)[/B]
+- Version increase for new repository.
+
+[B]3.2.7 (2019.08.12)[/B]
+- Added support for TVRage IDs.
+- Added support for Trakt IDs.
+- Added support for Trakt slugs.
+- Added container identifier support.
+- Added container segment support.
+
 [B]3.2.6 (2019.08.02)[/B]
 - Fixed UniversalScrapers integration.
 

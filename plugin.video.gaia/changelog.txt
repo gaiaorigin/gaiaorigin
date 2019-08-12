@@ -1,4 +1,7 @@
 
+[B]5.2.5 (2019.08.12)[/B]
+- Improved episode detection in season packs.
+
 [B]5.2.4 (2019.08.10)[/B]
 - Fixed title abbreviation search.
 - Fixed TVMaze lookups.

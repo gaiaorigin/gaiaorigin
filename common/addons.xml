@@ -1315,7 +1315,7 @@
 </addon>
 
 <!-- ORION -->
-<addon id="script.module.orion" version="3.2.6" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="3.3.0" name="Orion" provider-name="Orion">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="repository.orion" version="1.0.0" optional="true" />
@@ -1339,10 +1339,10 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="repository.orion" version="3.0.0" name="Orion Repository" provider-name="Orion">
+<addon id="repository.orion" version="3.3.0" name="Orion Repository" provider-name="Orion">
 	<extension point="xbmc.addon.repository" name="Orion Repository">
-		<info compressed="false">https://repo.orionoid.com/addons.xml?v=3.0.0</info>
-		<checksum>https://repo.orionoid.com/addons.xml.md5?v=3.0.0</checksum>
+		<info compressed="false">https://repo.orionoid.com/addons.xml?v=3.3.0</info>
+		<checksum>https://repo.orionoid.com/addons.xml.md5?v=3.3.0</checksum>
 		<datadir zip="true">https://repo.orionoid.com</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
