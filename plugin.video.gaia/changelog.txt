@@ -1,4 +1,8 @@
 
+[B]5.2.6 (2019.08.15)[/B]
+- Changed the default binge cancel action.
+- Fixed direct episode scraping.
+
 [B]5.2.5 (2019.08.12)[/B]
 - Improved episode detection in season packs.
 
