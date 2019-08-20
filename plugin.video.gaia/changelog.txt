@@ -1,4 +1,7 @@
 
+[B]5.2.7 (2019.08.19)[/B]
+- Fixed Orion integration.
+
 [B]5.2.6 (2019.08.15)[/B]
 - Changed the default binge cancel action.
 - Fixed direct episode scraping.

@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
+<addon id="plugin.video.gaia" version="5.2.7" name="Gaia" provider-name="Gaia">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+
+		<import addon="script.gaia.resources" version="5.2.0" />
+		<import addon="script.gaia.artwork" version="5.0.0" />
+		<import addon="script.gaia.binaries" version="5.0.0" optional="true" />
+		<import addon="script.gaia.icons" version="5.1.1" optional="true" />
+		<import addon="script.gaia.skins" version="5.0.0" optional="true" />
+		<import addon="repository.gaia" version="5.0.0" optional="true" />
+
+		<import addon="script.module.orion" version="3.0.0" />
+		<import addon="script.module.resolveurl" version="5.0.06" />
+		<import addon="script.module.urlresolver" version="3.0.29" />
+		<import addon="script.module.metahandler" version="2.9.0" />
+		<import addon="script.extendedinfo" version="5.6.1" />
+		<import addon="plugin.video.youtube" version="6.0.0" />
+
+		<import addon="plugin.video.elementum" version="0.0.43" optional="true" />
+		<import addon="plugin.video.quasar" version="0.9.78" optional="true" />
+		<import addon="script.trakt" version="3.1.11" optional="true" />
+		<import addon="service.upnext" version="1.0.0" optional="true" />
+		<import addon="script.module.addon.signals" version="0.0.1" optional="true" />
+
+		<import addon="script.module.openscrapers" version="0.0.0.4" optional="true" />
+		<import addon="script.module.lambdascrapers" version="1.0.0" optional="true" />
+		<import addon="script.module.civitasscrapers" version="0.0.2.4" optional="true" />
+		<import addon="script.module.globalscrapers" version="3.3.3" optional="true" />
+		<import addon="script.module.universalscrapers" version="1.0.0" optional="true" />
+		<import addon="script.module.nanscrapers" version="0.5.45" optional="true" />
+	</requires>
+
+	<extension point="xbmc.python.pluginsource" library="gaia.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Stream Movies and Shows</summary>
+		<description lang="en">Stream movies, shows, documentaries, and short films from a variety of sources, such as torrents, usenet, file hosters, and video streaming services.</description>
+		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
+		<platform>all</platform>
+		<license>GPL 3.0</license>
+		<website>https://gaiakodi.com</website>
+		<forum>https://gaiakodi.com/?support</forum>
+		<assets>
+			<icon>icon.png</icon> <!-- Do not change file name. Required by older Kodi versions. -->
+			<fanart>fanart.jpg</fanart> <!-- Do not change file name. Required by older Kodi versions. -->
+			<screenshot>resources/media/screenshots/screenshot01.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot02.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot03.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot04.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot05.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot06.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot07.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot08.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot09.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot10.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.gaia" version="5.2.6" name="Gaia" provider-name="Gaia">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -3652,7 +3714,7 @@
 		<import addon="resource.images.recordlabels.white" version="0.0.1"/>
 		<import addon="script.skin.info.service" version="1.0.1"/>
 
-		<import addon="plugin.video.gaia" version="5.2.6" optional="true" />
+		<import addon="plugin.video.gaia" version="5.2.7" optional="true" />
 		<import addon="repository.gaia" version="5.0.0" optional="true" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
