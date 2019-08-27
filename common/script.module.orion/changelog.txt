@@ -1,4 +1,10 @@
 
+[B]3.3.2 (2019.08.22)[/B]
+- Another change to the backup archive creation.
+
+[B]3.3.1 (2019.08.22)[/B]
+- Changed how backup archives are created.
+
 [B]3.3.0 (2019.08.12)[/B]
 - Version increase for new repository.
 

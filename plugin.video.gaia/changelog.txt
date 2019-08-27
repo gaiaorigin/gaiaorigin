@@ -1,4 +1,17 @@
 
+[B]5.3.0 (2019.08.27)[/B]
+- Fixed TorrentApi rate limit.
+- Disabled alternative titles by default.
+- Added preemptive termination notification.
+- Fixed multiple scrapes with IDs.
+- Adjusted alternative title scraping.
+- Added support for Emby exact searches.
+- Improved duplicate removal for premium providers.
+- Fixed Premiumize cache unicode encoding.
+- Improved debrid cache lookups.
+- Added decorations for the special window.
+- Fixed various debrid issues.
+
 [B]5.2.7 (2019.08.19)[/B]
 - Fixed Orion integration.
 
