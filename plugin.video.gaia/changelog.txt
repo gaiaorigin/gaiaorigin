@@ -1,4 +1,7 @@
 
+[B]5.4.1 (2019.08.29)[/B]
+- Add adapted settings for older versions.
+
 [B]5.4.0 (2019.08.29)[/B]
 - Restructured debrid classes.
 - Improved RealDebrid token refresh.
