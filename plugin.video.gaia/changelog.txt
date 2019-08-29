@@ -1,4 +1,12 @@
 
+[B]5.4.0 (2019.08.29)[/B]
+- Restructured debrid classes.
+- Improved RealDebrid token refresh.
+- Fixed 1337x provider.
+- Fixed TorrentApi provider.
+- Improved Orion scraping speed.
+- Improved debrid cache lookups.
+
 [B]5.3.2 (2019.08.27)[/B]
 - Fixed duplicate scraping process.
 - Fixed OffCloud cache lookup.
