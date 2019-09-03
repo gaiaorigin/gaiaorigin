@@ -1,4 +1,8 @@
 
+[B]5.5.1 (2019.09.03)[/B]
+- Added debrid priority.
+- Updated uploader name list.
+
 [B]5.5.0 (2019.09.03)[/B]
 - Added custom context menu.
 - Improved metadata provision.
