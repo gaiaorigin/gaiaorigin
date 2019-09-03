@@ -1,4 +1,12 @@
 
+[B]5.5.0 (2019.09.03)[/B]
+- Added custom context menu.
+- Improved metadata provision.
+- Fixed member usenet providers.
+- Updated uploader name list.
+- Fixed direct link handling.
+- Fixed various debrid and handler bugs.
+
 [B]5.4.2 (2019.08.29)[/B]
 - Fixed Orion threading issue.
 
