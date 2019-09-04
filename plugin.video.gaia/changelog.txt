@@ -1,4 +1,13 @@
 
+[B]5.5.2 (2019.09.04)[/B]
+- Updated uploader name list.
+- Fixed Premiumize interface issues.
+- Fixed Premiumize cloud downloads.
+- Removed MP3 file name filter.
+- Fixed local library provider.
+- Fixed various debrid issues.
+- Fixed color customization.
+
 [B]5.5.1 (2019.09.03)[/B]
 - Added debrid priority.
 - Updated uploader name list.
