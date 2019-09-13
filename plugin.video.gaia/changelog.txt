@@ -1,4 +1,20 @@
 
+[B]5.5.5 (2019.09.13)[/B]
+- Added scraping skip button.
+- Support ratings from different sites.
+- Added metadata database clearing.
+- Added database compression on clearing.
+- Added hide watched option.
+- Show calendar lists are now refreshed every time.
+- Change 0 days to new.
+- Fixed Premiumize download process.
+- Updated RealDebrid authentication process.
+- Fixed Orion provider.
+- Fixed FindNzb provider.
+- Fixed PopcornTime provider.
+- Fixed TorrentParadise provider.
+- Fixed local library provider.
+
 [B]5.5.4 (2019.09.08)[/B]
 - Changed extra video searches.
 - Changed recaps and extras for progress lists.

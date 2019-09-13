@@ -1,4 +1,11 @@
 
+[B]3.4.0 (2019.09.10)[/B]
+- Removed hardcoded uploaders.
+- Changed network exceptions.
+- Changed settings versions.
+- Added step-by-step setup wizard.
+- Added integration for Continuum.
+
 [B]3.3.2 (2019.08.22)[/B]
 - Another change to the backup archive creation.
 
