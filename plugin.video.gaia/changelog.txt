@@ -1,4 +1,7 @@
 
+[B]5.5.6 (2019.09.15)[/B]
+- Fixed RealDebrid authentication reset.
+
 [B]5.5.5 (2019.09.13)[/B]
 - Added scraping skip button.
 - Support ratings from different sites.
