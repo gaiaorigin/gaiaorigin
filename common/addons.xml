@@ -1315,7 +1315,7 @@
 </addon>
 
 <!-- ORION -->
-<addon id="script.module.orion" version="3.4.0" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="3.4.1" name="Orion" provider-name="Orion">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="repository.orion" version="1.0.0" optional="true" />

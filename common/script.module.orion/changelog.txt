@@ -1,4 +1,7 @@
 
+[B]3.4.1 (2019.09.15)[/B]
+- Added message for initialization errors.
+
 [B]3.4.0 (2019.09.10)[/B]
 - Removed hardcoded uploaders.
 - Changed network exceptions.

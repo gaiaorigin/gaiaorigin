@@ -1,4 +1,9 @@
 
+[B]5.5.7 (2019.09.17)[/B]
+- Fixed OffCloud failure loop.
+- Changed OffCloud error detection.
+- Fixed button focus for older Kodi versions.
+
 [B]5.5.6 (2019.09.15)[/B]
 - Fixed RealDebrid authentication reset.
 
