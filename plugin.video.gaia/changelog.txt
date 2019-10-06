@@ -1,4 +1,8 @@
 
+[B]5.5.8 (2019.10.06)[/B]
+- Fixed stats sharing enabled.
+- Changed donation menu.
+
 [B]5.5.7 (2019.09.17)[/B]
 - Fixed OffCloud failure loop.
 - Changed OffCloud error detection.
