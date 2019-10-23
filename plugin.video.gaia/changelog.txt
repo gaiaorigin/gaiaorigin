@@ -1,4 +1,9 @@
 
+[B]5.5.9 (2019.10.23)[/B]
+- Added cleaning option for local library.
+- Support for duplicate items in local library.
+- Fixed local library metadata.
+
 [B]5.5.8 (2019.10.06)[/B]
 - Fixed stats sharing enabled.
 - Changed donation menu.
