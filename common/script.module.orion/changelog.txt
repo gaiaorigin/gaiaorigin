@@ -1,4 +1,19 @@
 
+[B]3.5.2 (2019.11.12)[/B]
+- Fixed integration version.
+- Added support for redeeming vouchers.
+
+[B]3.5.1 (2019.11.11)[/B]
+- Fixed dark icons.
+
+[B]3.5.0 (2019.11.10)[/B]
+- Improved integration menu.
+- Improved settings wizard.
+- Added online backup feature.
+- Fixed settings and backup bugs.
+- Added Marauder integration.
+- Added Asguard integration.
+
 [B]3.4.1 (2019.09.15)[/B]
 - Added message for initialization errors.
 
